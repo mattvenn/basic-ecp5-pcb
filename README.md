@@ -7,11 +7,13 @@
 
 # What a Lattice ecp5 FPGA needs
 
-* A clock input. Has to be provided by an oscillator, it doesn't have a crystal driver.
-* ?? 1.2v core supply for the internal logic.
-* ?? 2.5v non volatile memory supply. Can be provided via a voltage drop over a diode from 3.3v.
-* IO supply for the IO pins, different banks of IO can have different supplies. This design uses 3.3v for all banks.
-* Get configured over SPI interface. This can be done directly by a microcontroller or a computer, or the bitstream can be programmed into some FLASH, and the FPGA will read it at boot. If FLASH isn't provided then the bitstream needs to be programmed at every power up or configuration reset. 
+Check ECP5 family datasheet for more information.
+
+* A clock input. Has to be provided by an oscillator, it doesn't have a crystal driver. Has to go to a PCLK pad
+* 1.1v core supply for the internal logic
+* 2.5v auxiliary power supply
+* 3.3v IO supply for the IO pins. In this design, all banks of IO have the same supply
+* Get configured over SPI interface. This can be done directly by a microcontroller or a computer, or the bitstream can be programmed into some FLASH, and the FPGA will read it at boot. If FLASH isn't provided then the bitstream needs to be programmed at every power up or configuration reset. See sysconfig documentation for more info.
 * Decoupling capacitors for each IO bank.
 
 # PCB
@@ -20,15 +22,15 @@
 
 * [Schematic](hardware/schematic.pdf)
 * [OHSPark project]() or [Gerbers](hardware/.zip)
-* Cheap, 2 layer board. Probably not so good for fast signals.
+* Cheap, 2 layer board. Not so good for fast signals.
 
 # BOM
 
-* FPGA ecp5 45k 45k part, 14mm bga with 256 pins, $15 LFE5U-45F-6BG256C 
-* ?? 3.3v reg TLV73333PDBVT
-* ?? 1.2v reg TLV73312PDBVT
+* FPGA ecp5 45k part, 14mm bga with 256 pins, 0.8mm pitch, $15 LFE5U-45F-6BG256C 
+* 3.3v reg TLV73333PDBVT
+* 1.1v reg TLV73311PDBVT
 * 12MHz oscillator SIT2001BI-S2-33E-12.000000G
-* ?? 16MB FLASH IS25LP016D-JBLE (optional).
+* 16MB FLASH IS25LP016D-JBLE (optional??).
 
 # Test
 
@@ -45,6 +47,7 @@ by PI_ADDR in the [Makefile](test/Makefile).
 # Reference
 
 * http://www.latticesemi.com/ecp5
+* In particular, the ECP5 and ECP5-5G Hardware Checklist is very useful
 
 # Inspiration
 
