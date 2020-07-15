@@ -1,0 +1,25 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# SiT2001B
+#
+DEF SiT2001B X 0 10 Y Y 1 F N
+F0 "X" -200 250 50 H V L CNN
+F1 "SiT2001B" 50 -250 50 H V L CNN
+F2 "Oscillator:Oscillator_SMD_SeikoEpson_SG210-4Pin_2.5x2.0mm" 200 -650 50 H I C CNN
+F3 "" -100 0 50 H I C CNN
+ALIAS SG-211
+$FPLIST
+ Oscillator*SMD*SeikoEpson*SG210*2.5x2.0mm*
+$ENDFPLIST
+DRAW
+S -200 200 200 -200 0 1 10 f
+P 9 0 1 0 -75 -25 -50 -25 -50 25 -25 25 -25 -25 0 -25 0 25 25 25 25 -25 N
+X GND 1 0 -300 100 U 50 50 1 1 W
+X OE 3 -300 0 100 R 50 50 1 1 I
+X Vcc 4 0 300 100 D 50 50 1 1 W
+X OUT 5 300 0 100 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+#End Library
