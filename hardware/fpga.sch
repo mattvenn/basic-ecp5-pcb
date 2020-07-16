@@ -226,40 +226,40 @@ $EndComp
 $Comp
 L power:+3.3V #PWR?
 U 1 1 5F2DEE2A
-P 5100 7450
+P 5100 7300
 AR Path="/5F2DEE2A" Ref="#PWR?"  Part="1" 
 AR Path="/5F109712/5F2DEE2A" Ref="#PWR0204"  Part="1" 
-F 0 "#PWR0204" H 5100 7300 50  0001 C CNN
-F 1 "+3.3V" H 5115 7623 50  0000 C CNN
-F 2 "" H 5100 7450 50  0001 C CNN
-F 3 "" H 5100 7450 50  0001 C CNN
-	1    5100 7450
+F 0 "#PWR0204" H 5100 7150 50  0001 C CNN
+F 1 "+3.3V" H 5115 7473 50  0000 C CNN
+F 2 "" H 5100 7300 50  0001 C CNN
+F 3 "" H 5100 7300 50  0001 C CNN
+	1    5100 7300
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5F2DEE34
-P 5100 10000
+P 4900 10200
 AR Path="/5F2DEE34" Ref="#PWR?"  Part="1" 
 AR Path="/5F109712/5F2DEE34" Ref="#PWR0205"  Part="1" 
-F 0 "#PWR0205" H 5100 9750 50  0001 C CNN
-F 1 "GND" H 5105 9827 50  0000 C CNN
-F 2 "" H 5100 10000 50  0001 C CNN
-F 3 "" H 5100 10000 50  0001 C CNN
-	1    5100 10000
+F 0 "#PWR0205" H 4900 9950 50  0001 C CNN
+F 1 "GND" H 4905 10027 50  0000 C CNN
+F 2 "" H 4900 10200 50  0001 C CNN
+F 3 "" H 4900 10200 50  0001 C CNN
+	1    4900 10200
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R?
 U 1 1 5F2DEE49
-P 5100 7700
+P 5100 7550
 AR Path="/5F2DEE49" Ref="R?"  Part="1" 
 AR Path="/5F109712/5F2DEE49" Ref="R3"  Part="1" 
-F 0 "R3" V 4893 7700 50  0001 C CNN
-F 1 "10k" V 5100 7700 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 5030 7700 50  0001 C CNN
-F 3 "~" H 5100 7700 50  0001 C CNN
-	1    5100 7700
+F 0 "R3" V 4893 7550 50  0001 C CNN
+F 1 "10k" V 5100 7550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5030 7550 50  0001 C CNN
+F 3 "~" H 5100 7550 50  0001 C CNN
+	1    5100 7550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -286,63 +286,43 @@ F 3 "" H 9900 8600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9900 8600 10050 8600
-Wire Wire Line
-	5450 7950 5100 7950
-Wire Wire Line
-	5100 7950 5100 8150
-Connection ~ 5100 8150
-Wire Wire Line
-	5100 8150 5100 10000
-Wire Wire Line
-	5100 8150 5450 8150
-Wire Wire Line
-	5450 8050 5200 8050
-Wire Wire Line
-	5200 8050 5200 7450
-Wire Wire Line
-	5200 7450 5100 7450
-Text GLabel 5000 9150 0    50   Input ~ 0
+Text GLabel 4600 9150 0    50   Input ~ 0
 sdo
-Text GLabel 5000 9050 0    50   Input ~ 0
+Text GLabel 4600 9050 0    50   Input ~ 0
 sdi
-Text GLabel 5000 7850 0    50   Input ~ 0
+Text GLabel 4600 7850 0    50   Input ~ 0
 sd_clk
-Text GLabel 5000 9450 0    50   Input ~ 0
+Text GLabel 4600 9450 0    50   Input ~ 0
 sd_cs
-Text GLabel 5000 9750 0    50   Input ~ 0
+Text GLabel 4600 9750 0    50   Input ~ 0
 creset
-Text GLabel 5000 8250 0    50   Input ~ 0
+Text GLabel 4600 8250 0    50   Input ~ 0
 cdone
-Text GLabel 5000 8950 0    50   Input ~ 0
+Text GLabel 4600 8950 0    50   Input ~ 0
 sd_io2
-Text GLabel 5000 8850 0    50   Input ~ 0
+Text GLabel 4600 8850 0    50   Input ~ 0
 sd_io3
 Wire Wire Line
-	5000 8250 5450 8250
+	4600 8250 5450 8250
 NoConn ~ 5450 8350
 Wire Wire Line
-	5000 7850 5100 7850
+	4600 9750 5300 9750
 Wire Wire Line
-	5000 9750 5450 9750
-Connection ~ 5100 7850
+	5100 7400 5100 7300
+Connection ~ 5100 7300
 Wire Wire Line
-	5100 7850 5450 7850
-Wire Wire Line
-	5100 7550 5100 7450
-Connection ~ 5100 7450
-Wire Wire Line
-	5000 9450 5450 9450
+	4600 9450 5200 9450
 NoConn ~ 5450 9650
 NoConn ~ 5450 9550
 NoConn ~ 5450 9250
 Wire Wire Line
-	5000 9150 5450 9150
+	4600 9150 5450 9150
 Wire Wire Line
-	5000 9050 5450 9050
+	4600 9050 5450 9050
 Wire Wire Line
-	5000 8950 5450 8950
+	4600 8950 5450 8950
 Wire Wire Line
-	5000 8850 5450 8850
+	4600 8850 5450 8850
 NoConn ~ 5450 8750
 NoConn ~ 5450 8650
 NoConn ~ 5450 8550
@@ -353,7 +333,7 @@ U 1 1 5F472499
 P 12950 8500
 F 0 "J10" H 13000 8917 50  0000 C CNN
 F 1 "Conn_02x05_Odd_Even" H 13000 8826 50  0000 C CNN
-F 2 "" H 12950 8500 50  0001 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical" H 12950 8500 50  0001 C CNN
 F 3 "~" H 12950 8500 50  0001 C CNN
 	1    12950 8500
 	-1   0    0    -1  
@@ -539,6 +519,251 @@ Text GLabel 13300 4900 0    50   Input ~ 0
 gp13
 Text GLabel 13300 4800 0    50   Input ~ 0
 gp12
-Text GLabel 5450 8450 0    50   Input ~ 0
+Text GLabel 4600 8450 0    50   Input ~ 0
 gp6
+NoConn ~ 850  2750
+NoConn ~ 850  3050
+NoConn ~ 850  3150
+NoConn ~ 850  3250
+NoConn ~ 850  3450
+NoConn ~ 850  3550
+NoConn ~ 850  3650
+NoConn ~ 850  4050
+NoConn ~ 850  4250
+NoConn ~ 850  4150
+NoConn ~ 850  4450
+NoConn ~ 850  4550
+NoConn ~ 850  4750
+NoConn ~ 850  4650
+NoConn ~ 3150 2200
+NoConn ~ 3150 2300
+NoConn ~ 3150 2400
+NoConn ~ 3150 2500
+NoConn ~ 3150 2600
+NoConn ~ 3150 2700
+NoConn ~ 3150 2800
+NoConn ~ 3150 2900
+NoConn ~ 3150 3200
+NoConn ~ 3150 3300
+NoConn ~ 3150 3400
+NoConn ~ 3150 3500
+NoConn ~ 3150 3600
+NoConn ~ 3150 3700
+NoConn ~ 3150 3800
+NoConn ~ 3150 3900
+NoConn ~ 3150 4200
+NoConn ~ 3150 4300
+NoConn ~ 3150 4400
+NoConn ~ 3150 4500
+NoConn ~ 3150 4600
+NoConn ~ 3150 4700
+NoConn ~ 3150 4800
+NoConn ~ 3150 4900
+NoConn ~ 3150 5200
+NoConn ~ 6000 2500
+NoConn ~ 6000 2600
+NoConn ~ 6000 2700
+NoConn ~ 6000 3000
+NoConn ~ 6000 3100
+NoConn ~ 6000 3400
+NoConn ~ 6000 3500
+NoConn ~ 6000 3600
+NoConn ~ 6000 3700
+NoConn ~ 6000 3800
+NoConn ~ 6000 4100
+NoConn ~ 6000 4200
+NoConn ~ 6000 4300
+NoConn ~ 6000 4400
+NoConn ~ 6000 4500
+NoConn ~ 6000 4600
+NoConn ~ 6000 4700
+NoConn ~ 6000 4900
+NoConn ~ 6000 5000
+NoConn ~ 6000 5100
+NoConn ~ 6000 5300
+NoConn ~ 6000 5500
+NoConn ~ 9450 2900
+NoConn ~ 9450 3000
+NoConn ~ 9450 3100
+NoConn ~ 9450 3200
+NoConn ~ 9450 3300
+NoConn ~ 9450 3500
+NoConn ~ 9450 3600
+NoConn ~ 9450 3700
+NoConn ~ 9450 4000
+NoConn ~ 9450 4100
+NoConn ~ 9450 4200
+NoConn ~ 9450 4300
+NoConn ~ 9450 4400
+NoConn ~ 9450 4500
+NoConn ~ 9450 4600
+NoConn ~ 9450 4700
+NoConn ~ 9450 4800
+NoConn ~ 9450 4900
+NoConn ~ 9450 5000
+NoConn ~ 9450 5200
+NoConn ~ 9450 5300
+NoConn ~ 9450 5400
+NoConn ~ 9450 5500
+NoConn ~ 9450 5600
+NoConn ~ 9450 5700
+NoConn ~ 13300 2700
+NoConn ~ 13300 2800
+NoConn ~ 13300 2900
+NoConn ~ 13300 3000
+NoConn ~ 13300 3100
+NoConn ~ 13300 3300
+NoConn ~ 13300 3400
+NoConn ~ 13300 3500
+NoConn ~ 13300 3800
+NoConn ~ 13300 3900
+NoConn ~ 13300 4000
+NoConn ~ 13300 4100
+NoConn ~ 13300 4400
+NoConn ~ 13300 5000
+NoConn ~ 13300 5100
+NoConn ~ 13300 5200
+NoConn ~ 13300 5300
+NoConn ~ 13300 5400
+NoConn ~ 13300 5500
+NoConn ~ 1050 7100
+NoConn ~ 1050 7200
+NoConn ~ 1050 7300
+NoConn ~ 1050 7600
+NoConn ~ 1050 7700
+NoConn ~ 1050 8000
+NoConn ~ 1050 8100
+NoConn ~ 1050 8200
+NoConn ~ 1050 8300
+NoConn ~ 1050 8400
+NoConn ~ 1050 8700
+NoConn ~ 1050 8800
+NoConn ~ 1050 8900
+NoConn ~ 1050 9000
+NoConn ~ 1050 9100
+NoConn ~ 1050 9200
+NoConn ~ 1050 9300
+NoConn ~ 1050 9500
+NoConn ~ 1050 9600
+NoConn ~ 1050 9700
+NoConn ~ 1050 9900
+NoConn ~ 1050 10100
+Text GLabel 9450 5100 0    50   Input ~ 0
+ce1
+$Comp
+L Device:R R?
+U 1 1 5F29923D
+P 4900 9950
+AR Path="/5F29923D" Ref="R?"  Part="1" 
+AR Path="/5F109712/5F29923D" Ref="R4"  Part="1" 
+F 0 "R4" V 4693 9950 50  0001 C CNN
+F 1 "10k" V 4900 9950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4830 9950 50  0001 C CNN
+F 3 "~" H 4900 9950 50  0001 C CNN
+	1    4900 9950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F29DA37
+P 5000 7550
+AR Path="/5F29DA37" Ref="R?"  Part="1" 
+AR Path="/5F109712/5F29DA37" Ref="R5"  Part="1" 
+F 0 "R5" V 4793 7550 50  0001 C CNN
+F 1 "10k" V 5000 7550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4930 7550 50  0001 C CNN
+F 3 "~" H 5000 7550 50  0001 C CNN
+	1    5000 7550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F29E8F7
+P 4800 9950
+AR Path="/5F29E8F7" Ref="R?"  Part="1" 
+AR Path="/5F109712/5F29E8F7" Ref="R7"  Part="1" 
+F 0 "R7" V 4593 9950 50  0001 C CNN
+F 1 "10k" V 4800 9950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4730 9950 50  0001 C CNN
+F 3 "~" H 4800 9950 50  0001 C CNN
+	1    4800 9950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5000 8050 5450 8050
+Connection ~ 5200 9450
+Wire Wire Line
+	5200 9450 5450 9450
+Wire Wire Line
+	4600 7850 5100 7850
+$Comp
+L Device:R R?
+U 1 1 5F2D6179
+P 5200 7550
+AR Path="/5F2D6179" Ref="R?"  Part="1" 
+AR Path="/5F109712/5F2D6179" Ref="R8"  Part="1" 
+F 0 "R8" V 4993 7550 50  0001 C CNN
+F 1 "10k" V 5200 7550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5130 7550 50  0001 C CNN
+F 3 "~" H 5200 7550 50  0001 C CNN
+	1    5200 7550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 7700 5200 9450
+Wire Wire Line
+	5100 7700 5100 7850
+Connection ~ 5100 7850
+Wire Wire Line
+	5100 7850 5450 7850
+Wire Wire Line
+	5200 7400 5200 7300
+Wire Wire Line
+	5200 7300 5100 7300
+Text Notes 4550 7000 0    50   ~ 0
+cfg[2:0] = 010. MSPI mode
+$Comp
+L Device:R R?
+U 1 1 5F3073A3
+P 5300 7550
+AR Path="/5F3073A3" Ref="R?"  Part="1" 
+AR Path="/5F109712/5F3073A3" Ref="R14"  Part="1" 
+F 0 "R14" V 5093 7550 50  0001 C CNN
+F 1 "10k" V 5300 7550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5230 7550 50  0001 C CNN
+F 3 "~" H 5300 7550 50  0001 C CNN
+	1    5300 7550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5300 7700 5300 9750
+Connection ~ 5300 9750
+Wire Wire Line
+	5300 9750 5450 9750
+Wire Wire Line
+	5300 7400 5300 7300
+Wire Wire Line
+	5300 7300 5200 7300
+Connection ~ 5200 7300
+Wire Wire Line
+	4600 8450 5450 8450
+Wire Wire Line
+	4800 10100 4900 10100
+Wire Wire Line
+	4900 10200 4900 10100
+Connection ~ 4900 10100
+Wire Wire Line
+	4900 9800 4900 8150
+Wire Wire Line
+	4800 7950 4800 9800
+Wire Wire Line
+	5000 7700 5000 8050
+Wire Wire Line
+	5000 7400 5000 7300
+Wire Wire Line
+	5000 7300 5100 7300
+Wire Wire Line
+	4900 8150 5450 8150
+Wire Wire Line
+	4800 7950 5450 7950
 $EndSCHEMATC

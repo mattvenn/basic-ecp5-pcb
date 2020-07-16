@@ -14,28 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Device:R R8
-U 1 1 5E0BCBC7
-P 7550 9250
-F 0 "R8" V 7343 9250 50  0001 C CNN
-F 1 "10k" V 7550 9250 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 7480 9250 50  0001 C CNN
-F 3 "~" H 7550 9250 50  0001 C CNN
-	1    7550 9250
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+3.3V #PWR0101
-U 1 1 5E0BE64B
-P 7400 9250
-F 0 "#PWR0101" H 7400 9100 50  0001 C CNN
-F 1 "+3.3V" V 7415 9378 50  0000 L CNN
-F 2 "" H 7400 9250 50  0001 C CNN
-F 3 "" H 7400 9250 50  0001 C CNN
-	1    7400 9250
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:LED D1
 U 1 1 5E0C043C
 P 5800 9350
@@ -80,17 +58,6 @@ F 3 "~" H 11900 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C9
-U 1 1 5E0E0BDD
-P 12300 1250
-F 0 "C9" H 12415 1296 50  0000 L CNN
-F 1 "100n" H 12415 1205 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 12338 1100 50  0001 C CNN
-F 3 "~" H 12300 1250 50  0001 C CNN
-	1    12300 1250
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C10
 U 1 1 5E0E1158
 P 12700 1250
@@ -113,21 +80,11 @@ F 3 "~" H 13100 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	11900 1100 12300 1100
-Wire Wire Line
-	12300 1100 12700 1100
-Connection ~ 12300 1100
-Wire Wire Line
 	12700 1100 13100 1100
 Connection ~ 12700 1100
 Wire Wire Line
 	13100 1400 12700 1400
-Wire Wire Line
-	12700 1400 12300 1400
 Connection ~ 12700 1400
-Wire Wire Line
-	12300 1400 11900 1400
-Connection ~ 12300 1400
 Connection ~ 11900 1400
 $Comp
 L clock:SiT2001B X1
@@ -608,8 +565,6 @@ F 3 "" H 1400 1900 50  0001 C CNN
 	1    1400 1900
 	1    0    0    -1  
 $EndComp
-Text Label 7700 9250 0    50   ~ 0
-creset
 Wire Wire Line
 	12500 4200 12850 4200
 Wire Wire Line
@@ -855,90 +810,6 @@ Wire Notes Line
 	11550 8750 15350 8750
 Wire Notes Line
 	4100 5950 600  5950
-$Comp
-L power:+3.3V #PWR01
-U 1 1 5E72131E
-P 10050 2050
-F 0 "#PWR01" H 10050 1900 50  0001 C CNN
-F 1 "+3.3V" H 10065 2223 50  0000 C CNN
-F 2 "" H 10050 2050 50  0001 C CNN
-F 3 "" H 10050 2050 50  0001 C CNN
-	1    10050 2050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR02
-U 1 1 5E721328
-P 10050 2350
-F 0 "#PWR02" H 10050 2100 50  0001 C CNN
-F 1 "GND" H 10055 2177 50  0000 C CNN
-F 2 "" H 10050 2350 50  0001 C CNN
-F 3 "" H 10050 2350 50  0001 C CNN
-	1    10050 2350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C16
-U 1 1 5E721332
-P 10050 2200
-F 0 "C16" H 10165 2246 50  0000 L CNN
-F 1 "100n" H 10165 2155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 10088 2050 50  0001 C CNN
-F 3 "~" H 10050 2200 50  0001 C CNN
-	1    10050 2200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C17
-U 1 1 5E72133C
-P 10450 2200
-F 0 "C17" H 10565 2246 50  0000 L CNN
-F 1 "100n" H 10565 2155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 10488 2050 50  0001 C CNN
-F 3 "~" H 10450 2200 50  0001 C CNN
-	1    10450 2200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C18
-U 1 1 5E721346
-P 10850 2200
-F 0 "C18" H 10965 2246 50  0000 L CNN
-F 1 "100n" H 10965 2155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 10888 2050 50  0001 C CNN
-F 3 "~" H 10850 2200 50  0001 C CNN
-	1    10850 2200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C19
-U 1 1 5E721350
-P 11250 2200
-F 0 "C19" H 11365 2246 50  0000 L CNN
-F 1 "100n" H 11365 2155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 11288 2050 50  0001 C CNN
-F 3 "~" H 11250 2200 50  0001 C CNN
-	1    11250 2200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10050 2050 10450 2050
-Connection ~ 10050 2050
-Wire Wire Line
-	10450 2050 10850 2050
-Connection ~ 10450 2050
-Wire Wire Line
-	10850 2050 11250 2050
-Connection ~ 10850 2050
-Wire Wire Line
-	11250 2350 10850 2350
-Wire Wire Line
-	10850 2350 10450 2350
-Connection ~ 10850 2350
-Wire Wire Line
-	10450 2350 10050 2350
-Connection ~ 10450 2350
-Connection ~ 10050 2350
 Text Label 5500 10000 2    50   ~ 0
 cdone
 Text Notes 3200 3550 0    197  Italic 39
@@ -8740,8 +8611,6 @@ F 3 "" H 5500 7000 50  0001 C CNN
 $EndComp
 Text Label 3450 4950 0    50   ~ 0
 gp7
-Text Notes 3750 4950 0    50   ~ 0
-ce1
 Text Notes 3750 4300 0    50   ~ 0
 ce0
 Text Label 3450 5250 0    50   ~ 0
@@ -8814,20 +8683,16 @@ F 3 "" H 3050 5450 50  0001 C CNN
 	1    3050 5450
 	0    -1   -1   0   
 $EndComp
-Text Label 3350 4950 2    50   ~ 0
-ce1
 Wire Wire Line
 	3350 4950 3450 4950
-Text Label 7200 4250 2    50   ~ 0
-ce1
 Text Notes 3150 4750 0    50   ~ 0
 Extra RPi pins
 Text Notes 13400 7350 0    50   ~ 0
 used for i2c
-Text Notes 6450 4300 0    50   ~ 0
+Text Notes 3750 5000 0    50   ~ 0
 another pi\ncs pin
 $Sheet
-S 7550 10150 2700 1250
+S 7550 5550 2700 1250
 U 5F109712
 F0 "fpga" 50
 F1 "fpga.sch" 50
@@ -9148,4 +9013,94 @@ Text GLabel 6000 8300 2    50   Input ~ 0
 gp16
 Text GLabel 6000 5600 2    50   Input ~ 0
 gp16
+$Comp
+L power:GND #PWR0104
+U 1 1 5F21B101
+P 10050 2200
+F 0 "#PWR0104" H 10050 1950 50  0001 C CNN
+F 1 "GND" H 10055 2027 50  0000 C CNN
+F 2 "" H 10050 2200 50  0001 C CNN
+F 3 "" H 10050 2200 50  0001 C CNN
+	1    10050 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C22
+U 1 1 5F21B107
+P 10050 2050
+F 0 "C22" H 10165 2096 50  0000 L CNN
+F 1 "100n" H 10165 2005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 10088 1900 50  0001 C CNN
+F 3 "~" H 10050 2050 50  0001 C CNN
+	1    10050 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C24
+U 1 1 5F21B10D
+P 10450 2050
+F 0 "C24" H 10565 2096 50  0000 L CNN
+F 1 "100n" H 10565 2005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 10488 1900 50  0001 C CNN
+F 3 "~" H 10450 2050 50  0001 C CNN
+	1    10450 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C25
+U 1 1 5F21B113
+P 10850 2050
+F 0 "C25" H 10965 2096 50  0000 L CNN
+F 1 "100n" H 10965 2005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 10888 1900 50  0001 C CNN
+F 3 "~" H 10850 2050 50  0001 C CNN
+	1    10850 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C26
+U 1 1 5F21B119
+P 11250 2050
+F 0 "C26" H 11365 2096 50  0000 L CNN
+F 1 "100n" H 11365 2005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 11288 1900 50  0001 C CNN
+F 3 "~" H 11250 2050 50  0001 C CNN
+	1    11250 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10050 1900 10450 1900
+Wire Wire Line
+	10450 1900 10850 1900
+Connection ~ 10450 1900
+Wire Wire Line
+	10850 1900 11250 1900
+Connection ~ 10850 1900
+Wire Wire Line
+	11250 2200 10850 2200
+Wire Wire Line
+	10850 2200 10450 2200
+Connection ~ 10850 2200
+Wire Wire Line
+	10450 2200 10050 2200
+Connection ~ 10450 2200
+Connection ~ 10050 2200
+$Comp
+L power:+2V5 #PWR0105
+U 1 1 5F21EACD
+P 10050 1900
+F 0 "#PWR0105" H 10050 1750 50  0001 C CNN
+F 1 "+2V5" H 10065 2073 50  0000 C CNN
+F 2 "" H 10050 1900 50  0001 C CNN
+F 3 "" H 10050 1900 50  0001 C CNN
+	1    10050 1900
+	1    0    0    -1  
+$EndComp
+Connection ~ 10050 1900
+Wire Wire Line
+	11900 1100 12700 1100
+Wire Wire Line
+	11900 1400 12700 1400
+Text GLabel 3350 4950 0    50   Input ~ 0
+ce1
 $EndSCHEMATC
