@@ -13,28 +13,26 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Label 7850 8300 2    50   ~ 0
-clock
 $Comp
 L Device:R R8
 U 1 1 5E0BCBC7
-P 8300 9750
-F 0 "R8" V 8093 9750 50  0001 C CNN
-F 1 "10k" V 8300 9750 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 8230 9750 50  0001 C CNN
-F 3 "~" H 8300 9750 50  0001 C CNN
-	1    8300 9750
+P 7550 9250
+F 0 "R8" V 7343 9250 50  0001 C CNN
+F 1 "10k" V 7550 9250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7480 9250 50  0001 C CNN
+F 3 "~" H 7550 9250 50  0001 C CNN
+	1    7550 9250
 	0    1    1    0   
 $EndComp
 $Comp
 L power:+3.3V #PWR0101
 U 1 1 5E0BE64B
-P 8150 9750
-F 0 "#PWR0101" H 8150 9600 50  0001 C CNN
-F 1 "+3.3V" V 8165 9878 50  0000 L CNN
-F 2 "" H 8150 9750 50  0001 C CNN
-F 3 "" H 8150 9750 50  0001 C CNN
-	1    8150 9750
+P 7400 9250
+F 0 "#PWR0101" H 7400 9100 50  0001 C CNN
+F 1 "+3.3V" V 7415 9378 50  0000 L CNN
+F 2 "" H 7400 9250 50  0001 C CNN
+F 3 "" H 7400 9250 50  0001 C CNN
+	1    7400 9250
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -60,143 +58,77 @@ F 3 "" H 5800 10200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR0104
-U 1 1 5E0C5098
-P 7850 9200
-F 0 "#PWR0104" H 7850 9050 50  0001 C CNN
-F 1 "+3.3V" V 7865 9328 50  0000 L CNN
-F 2 "" H 7850 9200 50  0001 C CNN
-F 3 "" H 7850 9200 50  0001 C CNN
-	1    7850 9200
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:+3.3V #PWR0105
-U 1 1 5E0C581F
-P 7800 6350
-F 0 "#PWR0105" H 7800 6200 50  0001 C CNN
-F 1 "+3.3V" V 7815 6478 50  0000 L CNN
-F 2 "" H 7800 6350 50  0001 C CNN
-F 3 "" H 7800 6350 50  0001 C CNN
-	1    7800 6350
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:+3.3V #PWR0106
-U 1 1 5E0C7338
-P 9850 6150
-F 0 "#PWR0106" H 9850 6000 50  0001 C CNN
-F 1 "+3.3V" V 9865 6278 50  0000 L CNN
-F 2 "" H 9850 6150 50  0001 C CNN
-F 3 "" H 9850 6150 50  0001 C CNN
-	1    9850 6150
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:+3.3V #PWR0107
-U 1 1 5E0C98F9
-P 9850 9900
-F 0 "#PWR0107" H 9850 9750 50  0001 C CNN
-F 1 "+3.3V" V 9865 10028 50  0000 L CNN
-F 2 "" H 9850 9900 50  0001 C CNN
-F 3 "" H 9850 9900 50  0001 C CNN
-	1    9850 9900
-	0    -1   -1   0   
-$EndComp
-$Comp
 L power:GND #PWR0109
 U 1 1 5E0DA71B
-P 8450 1600
-F 0 "#PWR0109" H 8450 1350 50  0001 C CNN
-F 1 "GND" H 8455 1427 50  0000 C CNN
-F 2 "" H 8450 1600 50  0001 C CNN
-F 3 "" H 8450 1600 50  0001 C CNN
-	1    8450 1600
+P 11900 1400
+F 0 "#PWR0109" H 11900 1150 50  0001 C CNN
+F 1 "GND" H 11905 1227 50  0000 C CNN
+F 2 "" H 11900 1400 50  0001 C CNN
+F 3 "" H 11900 1400 50  0001 C CNN
+	1    11900 1400
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C8
 U 1 1 5E0DCA4D
-P 8450 1450
-F 0 "C8" H 8565 1496 50  0000 L CNN
-F 1 "100n" H 8565 1405 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 8488 1300 50  0001 C CNN
-F 3 "~" H 8450 1450 50  0001 C CNN
-	1    8450 1450
+P 11900 1250
+F 0 "C8" H 12015 1296 50  0000 L CNN
+F 1 "100n" H 12015 1205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 11938 1100 50  0001 C CNN
+F 3 "~" H 11900 1250 50  0001 C CNN
+	1    11900 1250
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C9
 U 1 1 5E0E0BDD
-P 8850 1450
-F 0 "C9" H 8965 1496 50  0000 L CNN
-F 1 "100n" H 8965 1405 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 8888 1300 50  0001 C CNN
-F 3 "~" H 8850 1450 50  0001 C CNN
-	1    8850 1450
+P 12300 1250
+F 0 "C9" H 12415 1296 50  0000 L CNN
+F 1 "100n" H 12415 1205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 12338 1100 50  0001 C CNN
+F 3 "~" H 12300 1250 50  0001 C CNN
+	1    12300 1250
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C10
 U 1 1 5E0E1158
-P 9250 1450
-F 0 "C10" H 9365 1496 50  0000 L CNN
-F 1 "100n" H 9365 1405 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 9288 1300 50  0001 C CNN
-F 3 "~" H 9250 1450 50  0001 C CNN
-	1    9250 1450
+P 12700 1250
+F 0 "C10" H 12815 1296 50  0000 L CNN
+F 1 "100n" H 12815 1205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 12738 1100 50  0001 C CNN
+F 3 "~" H 12700 1250 50  0001 C CNN
+	1    12700 1250
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C11
 U 1 1 5E0E1726
-P 9650 1450
-F 0 "C11" H 9765 1496 50  0000 L CNN
-F 1 "100n" H 9765 1405 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 9688 1300 50  0001 C CNN
-F 3 "~" H 9650 1450 50  0001 C CNN
-	1    9650 1450
+P 13100 1250
+F 0 "C11" H 13215 1296 50  0000 L CNN
+F 1 "100n" H 13215 1205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 13138 1100 50  0001 C CNN
+F 3 "~" H 13100 1250 50  0001 C CNN
+	1    13100 1250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8450 1300 8850 1300
+	11900 1100 12300 1100
 Wire Wire Line
-	8850 1300 9250 1300
-Connection ~ 8850 1300
+	12300 1100 12700 1100
+Connection ~ 12300 1100
 Wire Wire Line
-	9250 1300 9650 1300
-Connection ~ 9250 1300
+	12700 1100 13100 1100
+Connection ~ 12700 1100
 Wire Wire Line
-	9650 1600 9250 1600
+	13100 1400 12700 1400
 Wire Wire Line
-	9250 1600 8850 1600
-Connection ~ 9250 1600
+	12700 1400 12300 1400
+Connection ~ 12700 1400
 Wire Wire Line
-	8850 1600 8450 1600
-Connection ~ 8850 1600
-Connection ~ 8450 1600
-$Comp
-L Connector:TestPoint TP1
-U 1 1 5E0E5F13
-P 7800 5050
-F 0 "TP1" V 7800 5450 50  0000 C CNN
-F 1 "gbin3" V 7800 5700 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 8000 5050 50  0001 C CNN
-F 3 "~" H 8000 5050 50  0001 C CNN
-	1    7800 5050
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector:TestPoint TP2
-U 1 1 5E0E740B
-P 7850 8400
-F 0 "TP2" V 7850 8800 50  0000 C CNN
-F 1 "gbin4" V 7850 9050 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 8050 8400 50  0001 C CNN
-F 3 "~" H 8050 8400 50  0001 C CNN
-	1    7850 8400
-	0    -1   -1   0   
-$EndComp
+	12300 1400 11900 1400
+Connection ~ 12300 1400
+Connection ~ 11900 1400
 $Comp
 L clock:SiT2001B X1
 U 1 1 5E0EF068
@@ -208,8 +140,6 @@ F 3 "http://www.farnell.com/datasheets/2581495.pdf?_ga=2.117585545.1437906943.15
 	1    1900 4600
 	1    0    0    -1  
 $EndComp
-Text Label 2200 4600 0    50   ~ 0
-clock
 $Comp
 L Device:C C2
 U 1 1 5E0F1E34
@@ -300,118 +230,96 @@ Wire Wire Line
 	2450 8000 1350 8000
 Wire Wire Line
 	1350 8000 1350 7750
-Text Label 2950 7400 0    50   ~ 0
-sdo
-Text Label 2950 7500 0    50   ~ 0
-sdi
-Text Label 1950 7700 2    50   ~ 0
-sd_clk
-Text Label 1950 7500 2    50   ~ 0
-sd_cs
 $Comp
 L power:+3.3V #PWR0118
 U 1 1 5E18CD0C
-P 6600 1300
-F 0 "#PWR0118" H 6600 1150 50  0001 C CNN
-F 1 "+3.3V" H 6615 1473 50  0000 C CNN
-F 2 "" H 6600 1300 50  0001 C CNN
-F 3 "" H 6600 1300 50  0001 C CNN
-	1    6600 1300
+P 10050 1100
+F 0 "#PWR0118" H 10050 950 50  0001 C CNN
+F 1 "+3.3V" H 10065 1273 50  0000 C CNN
+F 2 "" H 10050 1100 50  0001 C CNN
+F 3 "" H 10050 1100 50  0001 C CNN
+	1    10050 1100
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0119
 U 1 1 5E18CD16
-P 6600 1600
-F 0 "#PWR0119" H 6600 1350 50  0001 C CNN
-F 1 "GND" H 6605 1427 50  0000 C CNN
-F 2 "" H 6600 1600 50  0001 C CNN
-F 3 "" H 6600 1600 50  0001 C CNN
-	1    6600 1600
+P 10050 1400
+F 0 "#PWR0119" H 10050 1150 50  0001 C CNN
+F 1 "GND" H 10055 1227 50  0000 C CNN
+F 2 "" H 10050 1400 50  0001 C CNN
+F 3 "" H 10050 1400 50  0001 C CNN
+	1    10050 1400
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C4
 U 1 1 5E18CD20
-P 6600 1450
-F 0 "C4" H 6715 1496 50  0000 L CNN
-F 1 "100n" H 6715 1405 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 6638 1300 50  0001 C CNN
-F 3 "~" H 6600 1450 50  0001 C CNN
-	1    6600 1450
+P 10050 1250
+F 0 "C4" H 10165 1296 50  0000 L CNN
+F 1 "100n" H 10165 1205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 10088 1100 50  0001 C CNN
+F 3 "~" H 10050 1250 50  0001 C CNN
+	1    10050 1250
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C5
 U 1 1 5E18CD2A
-P 7000 1450
-F 0 "C5" H 7115 1496 50  0000 L CNN
-F 1 "100n" H 7115 1405 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 7038 1300 50  0001 C CNN
-F 3 "~" H 7000 1450 50  0001 C CNN
-	1    7000 1450
+P 10450 1250
+F 0 "C5" H 10565 1296 50  0000 L CNN
+F 1 "100n" H 10565 1205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 10488 1100 50  0001 C CNN
+F 3 "~" H 10450 1250 50  0001 C CNN
+	1    10450 1250
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C6
 U 1 1 5E18CD34
-P 7400 1450
-F 0 "C6" H 7515 1496 50  0000 L CNN
-F 1 "100n" H 7515 1405 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 7438 1300 50  0001 C CNN
-F 3 "~" H 7400 1450 50  0001 C CNN
-	1    7400 1450
+P 10850 1250
+F 0 "C6" H 10965 1296 50  0000 L CNN
+F 1 "100n" H 10965 1205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 10888 1100 50  0001 C CNN
+F 3 "~" H 10850 1250 50  0001 C CNN
+	1    10850 1250
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C7
 U 1 1 5E18CD3E
-P 7800 1450
-F 0 "C7" H 7915 1496 50  0000 L CNN
-F 1 "100n" H 7915 1405 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 7838 1300 50  0001 C CNN
-F 3 "~" H 7800 1450 50  0001 C CNN
-	1    7800 1450
+P 11250 1250
+F 0 "C7" H 11365 1296 50  0000 L CNN
+F 1 "100n" H 11365 1205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 11288 1100 50  0001 C CNN
+F 3 "~" H 11250 1250 50  0001 C CNN
+	1    11250 1250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6600 1300 7000 1300
-Connection ~ 6600 1300
+	10050 1100 10450 1100
+Connection ~ 10050 1100
 Wire Wire Line
-	7000 1300 7400 1300
-Connection ~ 7000 1300
+	10450 1100 10850 1100
+Connection ~ 10450 1100
 Wire Wire Line
-	7400 1300 7800 1300
-Connection ~ 7400 1300
+	10850 1100 11250 1100
+Connection ~ 10850 1100
 Wire Wire Line
-	7800 1600 7400 1600
+	11250 1400 10850 1400
 Wire Wire Line
-	7400 1600 7000 1600
-Connection ~ 7400 1600
+	10850 1400 10450 1400
+Connection ~ 10850 1400
 Wire Wire Line
-	7000 1600 6600 1600
-Connection ~ 7000 1600
-Connection ~ 6600 1600
-NoConn ~ 10600 1650
-Text Notes 12200 9550 0    50   ~ 0
-things to check:\nclock and reset gbin, will pll be ok?\nflash - pullups needed?\ncheck fpga pinout against lattice docs\n\n
-$Comp
-L power:+1V2 #PWR0122
-U 1 1 5E20D6DF
-P 10800 1650
-F 0 "#PWR0122" H 10800 1500 50  0001 C CNN
-F 1 "+1V2" V 10815 1778 50  0000 L CNN
-F 2 "" H 10800 1650 50  0001 C CNN
-F 3 "" H 10800 1650 50  0001 C CNN
-	1    10800 1650
-	1    0    0    -1  
-$EndComp
+	10450 1400 10050 1400
+Connection ~ 10450 1400
+Connection ~ 10050 1400
 $Comp
 L Regulator_Linear:TLV73312PDBV U3
 U 1 1 5E2D85AE
 P 4400 1250
 F 0 "U3" H 4400 1592 50  0000 C CNN
-F 1 "TLV73312PDBV" H 4400 1501 50  0000 C CNN
+F 1 "TLV73311PDBV" H 4400 1501 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5" H 4400 1575 50  0001 C CIN
 F 3 "http://www.ti.com/lit/ds/symlink/tlv733p.pdf" H 4400 1250 50  0001 C CNN
 	1    4400 1250
@@ -495,20 +403,9 @@ F 3 "" H 4850 1450 50  0001 C CNN
 	1    4850 1450
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+1V2 #PWR0128
-U 1 1 5E2E5AD0
-P 5450 1150
-F 0 "#PWR0128" H 5450 1000 50  0001 C CNN
-F 1 "+1V2" V 5465 1278 50  0000 L CNN
-F 2 "" H 5450 1150 50  0001 C CNN
-F 3 "" H 5450 1150 50  0001 C CNN
-	1    5450 1150
-	1    0    0    -1  
-$EndComp
 Connection ~ 4850 1150
 Text Notes 5250 1400 0    50   ~ 0
-1.2v @ 300mA
+1.1v @ 300mA
 $Comp
 L power:+3.3V #PWR0124
 U 1 1 5E220133
@@ -711,12 +608,8 @@ F 3 "" H 1400 1900 50  0001 C CNN
 	1    1400 1900
 	1    0    0    -1  
 $EndComp
-Text Label 8450 9750 0    50   ~ 0
+Text Label 7700 9250 0    50   ~ 0
 creset
-Text Label 12500 4200 0    50   ~ 0
-button1
-Text Label 12500 4700 0    50   ~ 0
-button2
 Wire Wire Line
 	12500 4200 12850 4200
 Wire Wire Line
@@ -782,10 +675,6 @@ F 3 "" H 13300 4700 50  0001 C CNN
 	1    13300 4700
 	1    0    0    -1  
 $EndComp
-Text Label 7850 7300 2    50   ~ 0
-button1
-Text Label 7850 7400 2    50   ~ 0
-button2
 $Comp
 L Device:LED D4
 U 1 1 5E3C5761
@@ -819,8 +708,6 @@ F 3 "" H 14750 4200 50  0001 C CNN
 	1    14750 4200
 	0    1    1    0   
 $EndComp
-Text Label 13900 4200 0    50   ~ 0
-led1
 Wire Wire Line
 	13900 4200 14150 4200
 $Comp
@@ -856,14 +743,8 @@ F 3 "" H 14750 4600 50  0001 C CNN
 	1    14750 4600
 	0    1    1    0   
 $EndComp
-Text Label 13900 4600 0    50   ~ 0
-led2
 Wire Wire Line
 	13900 4600 14150 4600
-Text Label 7850 7500 2    50   ~ 0
-led1
-Text Label 7850 7600 2    50   ~ 0
-led2
 $Comp
 L power:GND #PWR0146
 U 1 1 5E3DE385
@@ -886,38 +767,6 @@ F 3 "" H 13150 5750 50  0001 C CNN
 	1    13150 5750
 	0    -1   -1   0   
 $EndComp
-Text Label 12650 5350 2    50   ~ 0
-p1_1
-Text Label 12650 5450 2    50   ~ 0
-p1_2
-Text Label 12650 5550 2    50   ~ 0
-p1_3
-Text Label 12650 5650 2    50   ~ 0
-p1_4
-Text Label 13150 5350 0    50   ~ 0
-p1_7
-Text Label 13150 5450 0    50   ~ 0
-p1_8
-Text Label 13150 5550 0    50   ~ 0
-p1_9
-Text Label 13150 5650 0    50   ~ 0
-p1_10
-Text Label 9850 4150 2    50   ~ 0
-p1_1
-Text Label 9850 3950 2    50   ~ 0
-p1_2
-Text Label 9850 3750 2    50   ~ 0
-p1_3
-Text Label 9850 3550 2    50   ~ 0
-p1_4
-Text Label 9850 4050 2    50   ~ 0
-p1_7
-Text Label 9850 3850 2    50   ~ 0
-p1_8
-Text Label 9850 3650 2    50   ~ 0
-p1_9
-Text Label 9850 3450 2    50   ~ 0
-p1_10
 $Comp
 L power:GND #PWR0150
 U 1 1 5E440C2B
@@ -940,47 +789,6 @@ F 3 "" H 13150 6650 50  0001 C CNN
 	1    13150 6650
 	0    -1   -1   0   
 $EndComp
-Text Label 12650 6250 2    50   ~ 0
-p2_1
-Text Label 12650 6350 2    50   ~ 0
-p2_2
-Text Label 12650 6450 2    50   ~ 0
-p2_3
-Text Label 12650 6550 2    50   ~ 0
-p2_4
-Text Label 13150 6250 0    50   ~ 0
-p2_7
-Text Label 13150 6350 0    50   ~ 0
-p2_8
-Text Label 13150 6450 0    50   ~ 0
-p2_9
-Text Label 13150 6550 0    50   ~ 0
-p2_10
-Text Label 9850 6050 2    50   ~ 0
-p2_1
-Text Label 9850 5850 2    50   ~ 0
-p2_2
-Text Label 9850 5650 2    50   ~ 0
-p2_3
-Text Label 9850 5450 2    50   ~ 0
-p2_4
-Text Label 9850 5950 2    50   ~ 0
-p2_7
-Text Label 9850 5750 2    50   ~ 0
-p2_8
-Text Label 9850 5550 2    50   ~ 0
-p2_9
-Text Label 9850 5350 2    50   ~ 0
-p2_10
-NoConn ~ 9850 5050
-NoConn ~ 9850 5150
-NoConn ~ 9850 5250
-NoConn ~ 9850 4250
-NoConn ~ 9850 4350
-NoConn ~ 9850 4450
-NoConn ~ 9850 4550
-NoConn ~ 7850 8100
-NoConn ~ 7850 8200
 $Comp
 L power:PWR_FLAG #FLG0103
 U 1 1 5E6344BC
@@ -1007,19 +815,6 @@ Wire Wire Line
 	3750 1450 3500 1450
 Connection ~ 3750 1450
 $Comp
-L power:PWR_FLAG #FLG0105
-U 1 1 5E63838B
-P 10700 1550
-F 0 "#FLG0105" H 10700 1625 50  0001 C CNN
-F 1 "PWR_FLAG" H 10700 1950 50  0001 C CNN
-F 2 "" H 10700 1550 50  0001 C CNN
-F 3 "~" H 10700 1550 50  0001 C CNN
-	1    10700 1550
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	10700 1550 10700 1650
-$Comp
 L power:GND #PWR0152
 U 1 1 5E6392F1
 P 4400 2650
@@ -1041,60 +836,6 @@ Peripherals
 Text Notes 6750 3600 0    197  Italic 39
 FPGA
 Connection ~ 2450 8000
-Text Notes 1250 10400 0    50   ~ 0
-pullup on ss means configure as SPI master to read configuration from FLASH at boot
-$Comp
-L power:+3.3V #PWR0117
-U 1 1 5E1561DF
-P 1650 9550
-F 0 "#PWR0117" H 1650 9400 50  0001 C CNN
-F 1 "+3.3V" H 1665 9723 50  0000 C CNN
-F 2 "" H 1650 9550 50  0001 C CNN
-F 3 "" H 1650 9550 50  0001 C CNN
-	1    1650 9550
-	1    0    0    -1  
-$EndComp
-Text Label 2200 9550 2    50   ~ 0
-sd_cs
-Text Label 2200 9450 2    50   ~ 0
-sd_clk
-Text Label 2200 9350 2    50   ~ 0
-sdi
-Text Label 2200 9250 2    50   ~ 0
-sdo
-$Comp
-L power:GND #PWR0116
-U 1 1 5E10DE62
-P 2500 9950
-F 0 "#PWR0116" H 2500 9700 50  0001 C CNN
-F 1 "GND" H 2505 9777 50  0000 C CNN
-F 2 "" H 2500 9950 50  0001 C CNN
-F 3 "" H 2500 9950 50  0001 C CNN
-	1    2500 9950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C3
-U 1 1 5E10D72C
-P 2500 9800
-F 0 "C3" H 2615 9846 50  0000 L CNN
-F 1 "100n" H 2615 9755 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 2538 9650 50  0001 C CNN
-F 3 "~" H 2500 9800 50  0001 C CNN
-	1    2500 9800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR0115
-U 1 1 5E10CEFB
-P 2500 9650
-F 0 "#PWR0115" H 2500 9500 50  0001 C CNN
-F 1 "+3.3V" V 2515 9778 50  0000 L CNN
-F 2 "" H 2500 9650 50  0001 C CNN
-F 3 "" H 2500 9650 50  0001 C CNN
-	1    2500 9650
-	0    -1   -1   0   
-$EndComp
 $Comp
 L power:GND #PWR0113
 U 1 1 5E0FCB9C
@@ -1117,131 +858,91 @@ Wire Notes Line
 $Comp
 L power:+3.3V #PWR01
 U 1 1 5E72131E
-P 6600 2250
-F 0 "#PWR01" H 6600 2100 50  0001 C CNN
-F 1 "+3.3V" H 6615 2423 50  0000 C CNN
-F 2 "" H 6600 2250 50  0001 C CNN
-F 3 "" H 6600 2250 50  0001 C CNN
-	1    6600 2250
+P 10050 2050
+F 0 "#PWR01" H 10050 1900 50  0001 C CNN
+F 1 "+3.3V" H 10065 2223 50  0000 C CNN
+F 2 "" H 10050 2050 50  0001 C CNN
+F 3 "" H 10050 2050 50  0001 C CNN
+	1    10050 2050
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR02
 U 1 1 5E721328
-P 6600 2550
-F 0 "#PWR02" H 6600 2300 50  0001 C CNN
-F 1 "GND" H 6605 2377 50  0000 C CNN
-F 2 "" H 6600 2550 50  0001 C CNN
-F 3 "" H 6600 2550 50  0001 C CNN
-	1    6600 2550
+P 10050 2350
+F 0 "#PWR02" H 10050 2100 50  0001 C CNN
+F 1 "GND" H 10055 2177 50  0000 C CNN
+F 2 "" H 10050 2350 50  0001 C CNN
+F 3 "" H 10050 2350 50  0001 C CNN
+	1    10050 2350
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C16
 U 1 1 5E721332
-P 6600 2400
-F 0 "C16" H 6715 2446 50  0000 L CNN
-F 1 "100n" H 6715 2355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 6638 2250 50  0001 C CNN
-F 3 "~" H 6600 2400 50  0001 C CNN
-	1    6600 2400
+P 10050 2200
+F 0 "C16" H 10165 2246 50  0000 L CNN
+F 1 "100n" H 10165 2155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 10088 2050 50  0001 C CNN
+F 3 "~" H 10050 2200 50  0001 C CNN
+	1    10050 2200
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C17
 U 1 1 5E72133C
-P 7000 2400
-F 0 "C17" H 7115 2446 50  0000 L CNN
-F 1 "100n" H 7115 2355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 7038 2250 50  0001 C CNN
-F 3 "~" H 7000 2400 50  0001 C CNN
-	1    7000 2400
+P 10450 2200
+F 0 "C17" H 10565 2246 50  0000 L CNN
+F 1 "100n" H 10565 2155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 10488 2050 50  0001 C CNN
+F 3 "~" H 10450 2200 50  0001 C CNN
+	1    10450 2200
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C18
 U 1 1 5E721346
-P 7400 2400
-F 0 "C18" H 7515 2446 50  0000 L CNN
-F 1 "100n" H 7515 2355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 7438 2250 50  0001 C CNN
-F 3 "~" H 7400 2400 50  0001 C CNN
-	1    7400 2400
+P 10850 2200
+F 0 "C18" H 10965 2246 50  0000 L CNN
+F 1 "100n" H 10965 2155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 10888 2050 50  0001 C CNN
+F 3 "~" H 10850 2200 50  0001 C CNN
+	1    10850 2200
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C19
 U 1 1 5E721350
-P 7800 2400
-F 0 "C19" H 7915 2446 50  0000 L CNN
-F 1 "100n" H 7915 2355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 7838 2250 50  0001 C CNN
-F 3 "~" H 7800 2400 50  0001 C CNN
-	1    7800 2400
+P 11250 2200
+F 0 "C19" H 11365 2246 50  0000 L CNN
+F 1 "100n" H 11365 2155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 11288 2050 50  0001 C CNN
+F 3 "~" H 11250 2200 50  0001 C CNN
+	1    11250 2200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6600 2250 7000 2250
-Connection ~ 6600 2250
+	10050 2050 10450 2050
+Connection ~ 10050 2050
 Wire Wire Line
-	7000 2250 7400 2250
-Connection ~ 7000 2250
+	10450 2050 10850 2050
+Connection ~ 10450 2050
 Wire Wire Line
-	7400 2250 7800 2250
-Connection ~ 7400 2250
+	10850 2050 11250 2050
+Connection ~ 10850 2050
 Wire Wire Line
-	7800 2550 7400 2550
+	11250 2350 10850 2350
 Wire Wire Line
-	7400 2550 7000 2550
-Connection ~ 7400 2550
+	10850 2350 10450 2350
+Connection ~ 10850 2350
 Wire Wire Line
-	7000 2550 6600 2550
-Connection ~ 7000 2550
-Connection ~ 6600 2550
-$Comp
-L power:+1V2 #PWR03
-U 1 1 5E72C236
-P 8450 1300
-F 0 "#PWR03" H 8450 1150 50  0001 C CNN
-F 1 "+1V2" V 8465 1428 50  0000 L CNN
-F 2 "" H 8450 1300 50  0001 C CNN
-F 3 "" H 8450 1300 50  0001 C CNN
-	1    8450 1300
-	1    0    0    -1  
-$EndComp
-Connection ~ 8450 1300
-Text Label 7850 7100 2    50   ~ 0
-cdone
-Text Label 7850 7200 2    50   ~ 0
-creset
+	10450 2350 10050 2350
+Connection ~ 10450 2350
+Connection ~ 10050 2350
 Text Label 5500 10000 2    50   ~ 0
 cdone
 Text Notes 3200 3550 0    197  Italic 39
 Programming
-NoConn ~ 7850 8500
-NoConn ~ 7850 8600
-$Comp
-L power:GND #PWR05
-U 1 1 5E22C1EB
-P 11800 1650
-F 0 "#PWR05" H 11800 1400 50  0001 C CNN
-F 1 "GND" H 11805 1477 50  0000 C CNN
-F 2 "" H 11800 1650 50  0001 C CNN
-F 3 "" H 11800 1650 50  0001 C CNN
-	1    11800 1650
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:+1V2 #PWR04
-U 1 1 5E2640C4
-P 12050 850
-F 0 "#PWR04" H 12050 700 50  0001 C CNN
-F 1 "+1V2" V 12050 1000 50  0000 L CNN
-F 2 "" H 12050 850 50  0001 C CNN
-F 3 "" H 12050 850 50  0001 C CNN
-	1    12050 850 
-	0    1    1    0   
-$EndComp
 Wire Notes Line
 	2700 3150 2700 5800
 $Comp
@@ -1266,22 +967,6 @@ F 3 "" H 14900 5750 50  0001 C CNN
 	1    14900 5750
 	0    -1   -1   0   
 $EndComp
-Text Label 14400 5350 2    50   ~ 0
-p4_1
-Text Label 14400 5450 2    50   ~ 0
-p4_2
-Text Label 14400 5550 2    50   ~ 0
-p4_3
-Text Label 14400 5650 2    50   ~ 0
-p4_4
-Text Label 14900 5350 0    50   ~ 0
-p4_7
-Text Label 14900 5450 0    50   ~ 0
-p4_8
-Text Label 14900 5550 0    50   ~ 0
-p4_9
-Text Label 14900 5650 0    50   ~ 0
-p4_10
 $Comp
 L power:GND #PWR0157
 U 1 1 5E499CC8
@@ -1304,22 +989,6 @@ F 3 "" H 14900 6650 50  0001 C CNN
 	1    14900 6650
 	0    -1   -1   0   
 $EndComp
-Text Label 14400 6250 2    50   ~ 0
-p5_1
-Text Label 14400 6350 2    50   ~ 0
-p5_2
-Text Label 14400 6450 2    50   ~ 0
-p5_3
-Text Label 14400 6550 2    50   ~ 0
-p5_4
-Text Label 14900 6250 0    50   ~ 0
-p5_7
-Text Label 14900 6350 0    50   ~ 0
-p5_8
-Text Label 14900 6450 0    50   ~ 0
-p5_9
-Text Label 14900 6550 0    50   ~ 0
-p5_10
 $Comp
 L power:GND #PWR0161
 U 1 1 5E4D0062
@@ -1342,16 +1011,6 @@ F 3 "" H 13150 7550 50  0001 C CNN
 	1    13150 7550
 	0    -1   -1   0   
 $EndComp
-Text Label 12650 7150 2    50   ~ 0
-p3_1
-Text Label 13150 7150 0    50   ~ 0
-p3_7
-Text Label 13150 7250 0    50   ~ 0
-p3_8
-Text Label 13150 7350 0    50   ~ 0
-p3_9
-Text Label 13150 7450 0    50   ~ 0
-p3_10
 $Comp
 L power:GND #PWR0165
 U 1 1 5E4D009C
@@ -1374,90 +1033,8 @@ F 3 "" H 14900 7550 50  0001 C CNN
 	1    14900 7550
 	0    -1   -1   0   
 $EndComp
-Text Label 14400 7150 2    50   ~ 0
-p6_1
-Text Label 14400 7250 2    50   ~ 0
-p6_2
-Text Label 14400 7350 2    50   ~ 0
-p6_3
-Text Label 14400 7450 2    50   ~ 0
-p6_4
-Text Label 14900 7150 0    50   ~ 0
-p6_7
-Text Label 14900 7250 0    50   ~ 0
-p6_8
-Text Label 14900 7350 0    50   ~ 0
-p6_9
-Text Label 14900 7450 0    50   ~ 0
-p6_10
-Text Label 12650 7250 2    50   ~ 0
-p3_2
-Text Label 12650 7350 2    50   ~ 0
-p3_3
-Text Label 12650 7450 2    50   ~ 0
-p3_4
-Text Label 9850 7800 2    50   ~ 0
-p4_1
 Text Notes 1850 6700 0    50   ~ 0
 16Mb FLASH supports 0Bh fast read
-Text Notes 10850 1000 0    50   ~ 0
-800mV forward voltage drop
-$Comp
-L Device:C C20
-U 1 1 5E0B4919
-P 12050 1500
-F 0 "C20" H 12165 1546 50  0000 L CNN
-F 1 "100n" H 12165 1455 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 12088 1350 50  0001 C CNN
-F 3 "~" H 12050 1500 50  0001 C CNN
-	1    12050 1500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R14
-U 1 1 5E0C1501
-P 12050 1000
-F 0 "R14" V 11843 1000 50  0001 C CNN
-F 1 "200R" V 12050 1000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 11980 1000 50  0001 C CNN
-F 3 "~" H 12050 1000 50  0001 C CNN
-	1    12050 1000
-	-1   0    0    1   
-$EndComp
-Text Label 10900 1200 0    50   ~ 0
-vcc_pll
-Text Label 12050 1250 0    50   ~ 0
-vcc_pll
-Wire Wire Line
-	12050 1150 12050 1350
-$Comp
-L power:PWR_FLAG #FLG0101
-U 1 1 5E0E5408
-P 10900 1400
-F 0 "#FLG0101" H 10900 1475 50  0001 C CNN
-F 1 "PWR_FLAG" H 10900 1700 50  0001 C CNN
-F 2 "" H 10900 1400 50  0001 C CNN
-F 3 "~" H 10900 1400 50  0001 C CNN
-	1    10900 1400
-	0    1    1    0   
-$EndComp
-Connection ~ 10900 1400
-Wire Wire Line
-	10900 1400 10900 1200
-$Comp
-L power:PWR_FLAG #FLG0102
-U 1 1 5E0E639F
-P 12050 1650
-F 0 "#FLG0102" H 12050 1725 50  0001 C CNN
-F 1 "PWR_FLAG" H 12050 1950 50  0001 C CNN
-F 2 "" H 12050 1650 50  0001 C CNN
-F 3 "~" H 12050 1650 50  0001 C CNN
-	1    12050 1650
-	0    1    1    0   
-$EndComp
-Connection ~ 12050 1650
-Text Notes 12850 1050 0    50   ~ 0
-external PLL ground connection (GNDPLL) must\nNOT be connected to the board’s ground.
 $Comp
 L Mechanical:MountingHole_Pad H1
 U 1 1 5E0B6BAD
@@ -1546,81 +1123,17 @@ F 3 "" H 14450 2600 50  0001 C CNN
 	1    14450 2600
 	0    -1   -1   0   
 $EndComp
-Text Label 7800 3850 2    50   ~ 0
-p6_10
-Text Label 7800 4050 2    50   ~ 0
-p6_9
-Text Label 7800 4250 2    50   ~ 0
-p6_8
-Text Label 7800 4450 2    50   ~ 0
-p6_7
-Text Label 7800 3950 2    50   ~ 0
-p6_4
-Text Label 7800 4150 2    50   ~ 0
-p6_3
-Text Label 7800 4350 2    50   ~ 0
-p6_2
-Text Label 7800 4550 2    50   ~ 0
-p6_1
-Text Label 7800 5350 2    50   ~ 0
-p5_10
-Text Label 7800 5550 2    50   ~ 0
-p5_9
-Text Label 7800 5750 2    50   ~ 0
-p5_8
-Text Label 7800 5950 2    50   ~ 0
-p5_7
-Text Label 7800 5450 2    50   ~ 0
-p5_4
-Text Label 7800 5650 2    50   ~ 0
-p5_3
-Text Label 7800 5850 2    50   ~ 0
-p5_2
-Text Label 7800 6050 2    50   ~ 0
-p5_1
-Text Label 9850 9100 2    50   ~ 0
-p3_10
-Text Label 9850 9300 2    50   ~ 0
-p3_9
-Text Label 9850 9500 2    50   ~ 0
-p3_8
-Text Label 9850 9700 2    50   ~ 0
-p3_7
-Text Label 9850 9200 2    50   ~ 0
-p3_4
-Text Label 9850 9400 2    50   ~ 0
-p3_3
-Text Label 9850 9600 2    50   ~ 0
-p3_2
-Text Label 9850 9800 2    50   ~ 0
-p3_1
-Text Label 9850 7100 2    50   ~ 0
-p4_10
-Text Label 9850 7300 2    50   ~ 0
-p4_9
-Text Label 9850 7500 2    50   ~ 0
-p4_8
-Text Label 9850 7700 2    50   ~ 0
-p4_7
-Text Label 9850 7200 2    50   ~ 0
-p4_4
-Text Label 9850 7400 2    50   ~ 0
-p4_3
-Text Label 9850 7600 2    50   ~ 0
-p4_2
 $Comp
 L Connector:TestPoint TP5
 U 1 1 5E28F0E6
-P 1650 3850
-F 0 "TP5" V 1650 4250 50  0000 C CNN
-F 1 "clock" V 1650 4500 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 1850 3850 50  0001 C CNN
-F 3 "~" H 1850 3850 50  0001 C CNN
-	1    1650 3850
+P 1600 3900
+F 0 "TP5" V 1600 4300 50  0000 C CNN
+F 1 "clock" V 1600 4550 50  0000 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 1800 3900 50  0001 C CNN
+F 3 "~" H 1800 3900 50  0001 C CNN
+	1    1600 3900
 	0    -1   -1   0   
 $EndComp
-Text Label 1650 3850 0    50   ~ 0
-clock
 $Comp
 L Connector:TestPoint TP7
 U 1 1 5E295799
@@ -1637,42 +1150,12 @@ L Connector:TestPoint TP6
 U 1 1 5E29AAC7
 P 5450 1150
 F 0 "TP6" V 5450 1550 50  0000 C CNN
-F 1 "1.2v" V 5350 1550 50  0000 C CNN
+F 1 "1.1v" V 5250 1550 50  0000 C CNN
 F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 5650 1150 50  0001 C CNN
 F 3 "~" H 5650 1150 50  0001 C CNN
 	1    5450 1150
 	0    1    1    0   
 $EndComp
-$Comp
-L Connector:TestPoint TP8
-U 1 1 5E29BEFF
-P 10600 1400
-F 0 "TP8" V 10600 1800 50  0000 C CNN
-F 1 "2.5v" V 10600 2050 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10800 1400 50  0001 C CNN
-F 3 "~" H 10800 1400 50  0001 C CNN
-	1    10600 1400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10600 1400 10600 1450
-Wire Wire Line
-	10900 1650 10900 1550
-Wire Wire Line
-	11000 1650 11000 1550
-Wire Wire Line
-	11000 1550 10900 1550
-Connection ~ 10900 1550
-Wire Wire Line
-	10900 1550 10900 1400
-NoConn ~ 7800 4650
-NoConn ~ 7800 4750
-NoConn ~ 7800 4850
-NoConn ~ 7800 4950
-NoConn ~ 7800 5150
-NoConn ~ 7800 5250
-NoConn ~ 7800 6150
-NoConn ~ 7800 6250
 $Comp
 L Connector_Generic:Conn_02x06_Odd_Even J3
 U 1 1 5E27C155
@@ -1739,88 +1222,68 @@ F 3 "~" H 14600 7450 50  0001 C CNN
 	1    14600 7450
 	1    0    0    1   
 $EndComp
-NoConn ~ 9850 4650
-NoConn ~ 9850 4750
-NoConn ~ 9850 4850
-NoConn ~ 9850 4950
-NoConn ~ 9850 9000
-NoConn ~ 9850 8900
-NoConn ~ 9850 8800
-NoConn ~ 9850 8700
-NoConn ~ 9850 8600
-NoConn ~ 9850 8500
-NoConn ~ 9850 8400
-NoConn ~ 9850 8300
-NoConn ~ 9850 8200
-NoConn ~ 9850 8100
-NoConn ~ 9850 8000
-NoConn ~ 9850 7900
-NoConn ~ 7800 3750
-NoConn ~ 7800 3650
-NoConn ~ 7800 3550
-NoConn ~ 7800 3450
 $Comp
 L Device:L L1
 U 1 1 5E60CEE8
-P 9000 2350
-F 0 "L1" V 9190 2350 50  0000 C CNN
-F 1 "L" V 9099 2350 50  0000 C CNN
-F 2 "Inductor_SMD:L_0805_2012Metric" H 9000 2350 50  0001 C CNN
-F 3 "~" H 9000 2350 50  0001 C CNN
-	1    9000 2350
+P 12450 2150
+F 0 "L1" V 12640 2150 50  0000 C CNN
+F 1 "L" V 12549 2150 50  0000 C CNN
+F 2 "Inductor_SMD:L_0805_2012Metric" H 12450 2150 50  0001 C CNN
+F 3 "~" H 12450 2150 50  0001 C CNN
+	1    12450 2150
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:+3.3VP #PWR0108
 U 1 1 5E610C83
-P 9300 2350
-F 0 "#PWR0108" H 9450 2300 50  0001 C CNN
-F 1 "+3.3VP" H 9320 2493 50  0000 C CNN
-F 2 "" H 9300 2350 50  0001 C CNN
-F 3 "" H 9300 2350 50  0001 C CNN
-	1    9300 2350
+P 12750 2150
+F 0 "#PWR0108" H 12900 2100 50  0001 C CNN
+F 1 "+3.3VP" H 12770 2293 50  0000 C CNN
+F 2 "" H 12750 2150 50  0001 C CNN
+F 3 "" H 12750 2150 50  0001 C CNN
+	1    12750 2150
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3V #PWR0121
 U 1 1 5E611FE5
-P 8700 2350
-F 0 "#PWR0121" H 8700 2200 50  0001 C CNN
-F 1 "+3.3V" H 8715 2523 50  0000 C CNN
-F 2 "" H 8700 2350 50  0001 C CNN
-F 3 "" H 8700 2350 50  0001 C CNN
-	1    8700 2350
+P 12150 2150
+F 0 "#PWR0121" H 12150 2000 50  0001 C CNN
+F 1 "+3.3V" H 12165 2323 50  0000 C CNN
+F 2 "" H 12150 2150 50  0001 C CNN
+F 3 "" H 12150 2150 50  0001 C CNN
+	1    12150 2150
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C23
 U 1 1 5E612797
-P 9300 2600
-F 0 "C23" H 9415 2646 50  0000 L CNN
-F 1 "100n" H 9415 2555 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 9338 2450 50  0001 C CNN
-F 3 "~" H 9300 2600 50  0001 C CNN
-	1    9300 2600
+P 12750 2400
+F 0 "C23" H 12865 2446 50  0000 L CNN
+F 1 "100n" H 12865 2355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 12788 2250 50  0001 C CNN
+F 3 "~" H 12750 2400 50  0001 C CNN
+	1    12750 2400
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0145
 U 1 1 5E613DCA
-P 9300 2750
-F 0 "#PWR0145" H 9300 2500 50  0001 C CNN
-F 1 "GND" H 9305 2577 50  0000 C CNN
-F 2 "" H 9300 2750 50  0001 C CNN
-F 3 "" H 9300 2750 50  0001 C CNN
-	1    9300 2750
+P 12750 2550
+F 0 "#PWR0145" H 12750 2300 50  0001 C CNN
+F 1 "GND" H 12755 2377 50  0000 C CNN
+F 2 "" H 12750 2550 50  0001 C CNN
+F 3 "" H 12750 2550 50  0001 C CNN
+	1    12750 2550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8700 2350 8850 2350
+	12150 2150 12300 2150
 Wire Wire Line
-	9150 2350 9300 2350
+	12600 2150 12750 2150
 Wire Wire Line
-	9300 2450 9300 2350
-Connection ~ 9300 2350
+	12750 2250 12750 2150
+Connection ~ 12750 2150
 $Comp
 L Device:CP C21
 U 1 1 5E626062
@@ -2035,12 +1498,12 @@ $EndComp
 $Comp
 L power:PWR_FLAG #FLG0108
 U 1 1 5E6AFE3E
-P 9300 2350
-F 0 "#FLG0108" H 9300 2425 50  0001 C CNN
-F 1 "PWR_FLAG" H 9300 2523 50  0001 C CNN
-F 2 "" H 9300 2350 50  0001 C CNN
-F 3 "~" H 9300 2350 50  0001 C CNN
-	1    9300 2350
+P 12750 2150
+F 0 "#FLG0108" H 12750 2225 50  0001 C CNN
+F 1 "PWR_FLAG" H 12750 2323 50  0001 C CNN
+F 2 "" H 12750 2150 50  0001 C CNN
+F 3 "~" H 12750 2150 50  0001 C CNN
+	1    12750 2150
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -2058,18 +1521,6 @@ F 3 "" H 6000 4100 50  0001 C CNN
 	1    6000 4100
 	0    -1   -1   0   
 $EndComp
-Text Label 3350 4000 2    50   ~ 0
-sdo
-Text Label 3350 4100 2    50   ~ 0
-sdi
-Text Label 3350 4200 2    50   ~ 0
-sd_clk
-Text Label 3350 4300 2    50   ~ 0
-sd_cs
-Text Label 3350 4500 2    50   ~ 0
-cdone
-Text Label 3350 4400 2    50   ~ 0
-creset
 $Comp
 L power:+5V #PWR0177
 U 1 1 5E0DA548
@@ -2125,14 +1576,6 @@ F 3 "" H 5500 5100 50  0001 C CNN
 	1    5500 5100
 	0    1    1    0   
 $EndComp
-Text Label 2950 7700 0    50   ~ 0
-sd_io2
-Text Label 2950 7800 0    50   ~ 0
-sd_io3
-Text Label 7850 8800 2    50   ~ 0
-sd_io2
-Text Label 7850 8900 2    50   ~ 0
-sd_io3
 $Comp
 L power:+3.3V #PWR0112
 U 1 1 5E2C7B35
@@ -2166,18 +1609,12 @@ F 3 "~" H 5700 10000 50  0001 C CNN
 	1    5700 10000
 	1    0    0    -1  
 $EndComp
-Text Label 4850 1150 0    50   ~ 0
-1v2
-Text Label 4850 2250 0    50   ~ 0
-3v3
 Wire Notes Line
 	4150 5950 4900 5950
 Wire Notes Line
 	4900 5950 4900 11000
 Wire Notes Line
 	6850 11000 6800 11000
-Wire Notes Line
-	6850 4250 6850 11000
 $Bitmap
 Pos -3850 4650
 Scale 1.000000
@@ -9024,10 +8461,6 @@ Text Label 6000 5100 0    50   ~ 0
 gp7
 Text Label 6000 5200 0    50   ~ 0
 gp1
-Text Label 6000 5400 0    50   ~ 0
-gp12
-Text Label 6000 5600 0    50   ~ 0
-gp16
 Text Label 6000 5700 0    50   ~ 0
 gp20
 Text Label 6000 5800 0    50   ~ 0
@@ -9080,10 +8513,6 @@ Text Label 5500 5200 2    50   ~ 0
 gp0
 Text Label 5500 5300 2    50   ~ 0
 gp5
-Text Label 5500 5400 2    50   ~ 0
-gp6
-Text Label 5500 5500 2    50   ~ 0
-gp13
 Text Label 5500 5600 2    50   ~ 0
 gp19
 Text Label 5500 5700 2    50   ~ 0
@@ -9231,10 +8660,6 @@ Text Label 6000 7800 0    50   ~ 0
 gp7
 Text Label 6000 7900 0    50   ~ 0
 gp1
-Text Label 6000 8100 0    50   ~ 0
-gp12
-Text Label 6000 8300 0    50   ~ 0
-gp16
 Text Label 6000 8400 0    50   ~ 0
 gp20
 Text Label 6000 8500 0    50   ~ 0
@@ -9287,10 +8712,6 @@ Text Label 5500 7900 2    50   ~ 0
 gp0
 Text Label 5500 8000 2    50   ~ 0
 gp5
-Text Label 5500 8100 2    50   ~ 0
-gp6
-Text Label 5500 8200 2    50   ~ 0
-gp13
 Text Label 5500 8300 2    50   ~ 0
 gp19
 Text Label 5500 8400 2    50   ~ 0
@@ -9329,25 +8750,6 @@ Text Label 3450 5350 0    50   ~ 0
 gp21
 Text Notes 3750 5300 0    50   ~ 0
 used for i2c
-Wire Wire Line
-	2200 9250 2500 9250
-Wire Wire Line
-	2200 9350 2500 9350
-Wire Wire Line
-	2200 9450 2500 9450
-$Comp
-L Device:R R4
-U 1 1 5E13C867
-P 1800 9550
-F 0 "R4" V 1593 9550 50  0001 C CNN
-F 1 "10k" V 1800 9550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 1730 9550 50  0001 C CNN
-F 3 "~" H 1800 9550 50  0001 C CNN
-	1    1800 9550
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1950 9550 2500 9550
 Text Label 3350 5350 2    50   ~ 0
 p3_10
 Text Label 3350 5250 2    50   ~ 0
@@ -9416,32 +8818,334 @@ Text Label 3350 4950 2    50   ~ 0
 ce1
 Wire Wire Line
 	3350 4950 3450 4950
-Text Label 7850 8700 2    50   ~ 0
+Text Label 7200 4250 2    50   ~ 0
 ce1
 Text Notes 3150 4750 0    50   ~ 0
 Extra RPi pins
 Text Notes 13400 7350 0    50   ~ 0
 used for i2c
-Text Label 7850 7900 2    50   ~ 0
-gp12
-Text Label 7850 8000 2    50   ~ 0
-gp6
-Text Label 7850 7800 2    50   ~ 0
-gp13
-Text Label 7850 7700 2    50   ~ 0
-gp16
-NoConn ~ 7850 9000
-NoConn ~ 7850 9100
-Text Notes 7100 7850 0    50   ~ 0
-some extra\npi pins
-Text Notes 7100 8750 0    50   ~ 0
+Text Notes 6450 4300 0    50   ~ 0
 another pi\ncs pin
-Wire Wire Line
-	11900 1650 12050 1650
 $Sheet
 S 7550 10150 2700 1250
 U 5F109712
 F0 "fpga" 50
 F1 "fpga.sch" 50
 $EndSheet
+$Comp
+L Regulator_Linear:TLV73333PDBV U5
+U 1 1 5F2AA7C4
+P 7200 1250
+F 0 "U5" H 7200 1592 50  0000 C CNN
+F 1 "TLV73325PDBV" H 7200 1501 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 7200 1575 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/tlv733p.pdf" H 7200 1250 50  0001 C CNN
+	1    7200 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0115
+U 1 1 5F2AA7CE
+P 6550 1150
+F 0 "#PWR0115" H 6550 1000 50  0001 C CNN
+F 1 "+5V" H 6565 1323 50  0000 C CNN
+F 2 "" H 6550 1150 50  0001 C CNN
+F 3 "" H 6550 1150 50  0001 C CNN
+	1    6550 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 1150 6800 1150
+Wire Wire Line
+	6900 1250 6800 1250
+Wire Wire Line
+	6800 1250 6800 1150
+Connection ~ 6800 1150
+Wire Wire Line
+	6800 1150 6900 1150
+$Comp
+L Device:C C3
+U 1 1 5F2AA7DD
+P 6550 1300
+F 0 "C3" H 6665 1346 50  0000 L CNN
+F 1 "1u" H 6665 1255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6588 1150 50  0001 C CNN
+F 3 "~" H 6550 1300 50  0001 C CNN
+	1    6550 1300
+	1    0    0    -1  
+$EndComp
+Connection ~ 6550 1150
+$Comp
+L power:GND #PWR0116
+U 1 1 5F2AA7E8
+P 6550 1450
+F 0 "#PWR0116" H 6550 1200 50  0001 C CNN
+F 1 "GND" H 6555 1277 50  0000 C CNN
+F 2 "" H 6550 1450 50  0001 C CNN
+F 3 "" H 6550 1450 50  0001 C CNN
+	1    6550 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C20
+U 1 1 5F2AA7F2
+P 7650 1300
+F 0 "C20" H 7765 1346 50  0000 L CNN
+F 1 "1u" H 7765 1255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7688 1150 50  0001 C CNN
+F 3 "~" H 7650 1300 50  0001 C CNN
+	1    7650 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 1150 7650 1150
+$Comp
+L power:GND #PWR0117
+U 1 1 5F2AA7FD
+P 7650 1450
+F 0 "#PWR0117" H 7650 1200 50  0001 C CNN
+F 1 "GND" H 7655 1277 50  0000 C CNN
+F 2 "" H 7650 1450 50  0001 C CNN
+F 3 "" H 7650 1450 50  0001 C CNN
+	1    7650 1450
+	1    0    0    -1  
+$EndComp
+Connection ~ 7650 1150
+Text Notes 8100 1400 0    50   ~ 0
+2.5v @ 300mA
+$Comp
+L power:GND #PWR0122
+U 1 1 5F2AA809
+P 7200 1550
+F 0 "#PWR0122" H 7200 1300 50  0001 C CNN
+F 1 "GND" H 7205 1377 50  0000 C CNN
+F 2 "" H 7200 1550 50  0001 C CNN
+F 3 "" H 7200 1550 50  0001 C CNN
+	1    7200 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5F2AA813
+P 8250 1150
+F 0 "TP3" V 8250 1550 50  0000 C CNN
+F 1 "2.5v" V 8150 1550 50  0000 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 8450 1150 50  0001 C CNN
+F 3 "~" H 8450 1150 50  0001 C CNN
+	1    8250 1150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:L L4
+U 1 1 5F2AA81D
+P 8100 1150
+F 0 "L4" V 8290 1150 50  0000 C CNN
+F 1 "L" V 8199 1150 50  0000 C CNN
+F 2 "Inductor_SMD:L_0805_2012Metric" H 8100 1150 50  0001 C CNN
+F 3 "~" H 8100 1150 50  0001 C CNN
+	1    8100 1150
+	0    -1   -1   0   
+$EndComp
+Connection ~ 8250 1150
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5F2AA828
+P 8250 1150
+F 0 "#FLG0101" H 8250 1225 50  0001 C CNN
+F 1 "PWR_FLAG" H 8250 1323 50  0001 C CNN
+F 2 "" H 8250 1150 50  0001 C CNN
+F 3 "~" H 8250 1150 50  0001 C CNN
+	1    8250 1150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7650 1150 7950 1150
+$Comp
+L power:+1V1 #PWR0128
+U 1 1 5F2B4622
+P 5450 1150
+F 0 "#PWR0128" H 5450 1000 50  0001 C CNN
+F 1 "+1V1" H 5465 1323 50  0000 C CNN
+F 2 "" H 5450 1150 50  0001 C CNN
+F 3 "" H 5450 1150 50  0001 C CNN
+	1    5450 1150
+	1    0    0    -1  
+$EndComp
+Text Label 4850 2250 0    50   ~ 0
+3v3
+Text Label 4850 1150 0    50   ~ 0
+1v1
+Text Label 7650 1150 0    50   ~ 0
+2v5
+$Comp
+L power:+2V5 #PWR0196
+U 1 1 5F2C5743
+P 8250 1150
+F 0 "#PWR0196" H 8250 1000 50  0001 C CNN
+F 1 "+2V5" H 8265 1323 50  0000 C CNN
+F 2 "" H 8250 1150 50  0001 C CNN
+F 3 "" H 8250 1150 50  0001 C CNN
+	1    8250 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+1V1 #PWR0197
+U 1 1 5F2C89D1
+P 11900 1100
+F 0 "#PWR0197" H 11900 950 50  0001 C CNN
+F 1 "+1V1" H 11915 1273 50  0000 C CNN
+F 2 "" H 11900 1100 50  0001 C CNN
+F 3 "" H 11900 1100 50  0001 C CNN
+	1    11900 1100
+	1    0    0    -1  
+$EndComp
+Connection ~ 11900 1100
+Text GLabel 3350 4000 0    50   Input ~ 0
+sdo
+Text GLabel 3350 4100 0    50   Input ~ 0
+sdi
+Text GLabel 3350 4200 0    50   Input ~ 0
+sd_clk
+Text GLabel 3350 4300 0    50   Input ~ 0
+sd_cs
+Text GLabel 3350 4400 0    50   Input ~ 0
+creset
+Text GLabel 3350 4500 0    50   Input ~ 0
+cdone
+Text GLabel 2950 7400 2    50   Input ~ 0
+sdo
+Text GLabel 2950 7500 2    50   Input ~ 0
+sdi
+Text GLabel 1950 7700 0    50   Input ~ 0
+sd_clk
+Text GLabel 1950 7500 0    50   Input ~ 0
+sd_cs
+Text GLabel 2950 7700 2    50   Input ~ 0
+sd_io2
+Text GLabel 2950 7800 2    50   Input ~ 0
+sd_io3
+Text GLabel 2200 4600 2    50   Input ~ 0
+clk
+Text GLabel 13150 6550 2    50   Input ~ 0
+p2_10
+Text GLabel 12650 6550 0    50   Input ~ 0
+p2_4
+Text GLabel 13150 6450 2    50   Input ~ 0
+p2_9
+Text GLabel 12650 6450 0    50   Input ~ 0
+p2_3
+Text GLabel 13150 6350 2    50   Input ~ 0
+p2_8
+Text GLabel 12650 6350 0    50   Input ~ 0
+p2_2
+Text GLabel 13150 6250 2    50   Input ~ 0
+p2_7
+Text GLabel 12650 6250 0    50   Input ~ 0
+p2_1
+Text GLabel 1600 3900 2    50   Input ~ 0
+clk
+Text GLabel 13150 5350 2    50   Input ~ 0
+p1_7
+Text GLabel 12650 5450 0    50   Input ~ 0
+p1_2
+Text GLabel 13150 5450 2    50   Input ~ 0
+p1_8
+Text GLabel 12650 5550 0    50   Input ~ 0
+p1_3
+Text GLabel 13150 5550 2    50   Input ~ 0
+p1_9
+Text GLabel 12650 5650 0    50   Input ~ 0
+p1_4
+Text GLabel 13150 5650 2    50   Input ~ 0
+p1_10
+Text GLabel 12650 5350 0    50   Input ~ 0
+p1_1
+Text GLabel 14900 5650 2    50   Input ~ 0
+p4_10
+Text GLabel 14400 5650 0    50   Input ~ 0
+p4_4
+Text GLabel 14900 5550 2    50   Input ~ 0
+p4_9
+Text GLabel 14400 5550 0    50   Input ~ 0
+p4_3
+Text GLabel 14900 5450 2    50   Input ~ 0
+p4_8
+Text GLabel 14400 5450 0    50   Input ~ 0
+p4_2
+Text GLabel 14900 5350 2    50   Input ~ 0
+p4_7
+Text GLabel 14400 5350 0    50   Input ~ 0
+p4_1
+Text GLabel 13150 7350 2    50   Input ~ 0
+p3_9
+Text GLabel 12650 7350 0    50   Input ~ 0
+p3_3
+Text GLabel 13150 7250 2    50   Input ~ 0
+p3_8
+Text GLabel 12650 7250 0    50   Input ~ 0
+p3_2
+Text GLabel 13150 7150 2    50   Input ~ 0
+p3_7
+Text GLabel 12650 7150 0    50   Input ~ 0
+p3_1
+Text GLabel 12650 7450 0    50   Input ~ 0
+p3_4
+Text GLabel 13150 7450 2    50   Input ~ 0
+p3_10
+Text GLabel 14400 6250 0    50   Input ~ 0
+p5_1
+Text GLabel 14900 6250 2    50   Input ~ 0
+p5_7
+Text GLabel 14400 6350 0    50   Input ~ 0
+p5_2
+Text GLabel 14900 6350 2    50   Input ~ 0
+p5_8
+Text GLabel 14400 6450 0    50   Input ~ 0
+p5_3
+Text GLabel 14900 6450 2    50   Input ~ 0
+p5_9
+Text GLabel 14400 6550 0    50   Input ~ 0
+p5_4
+Text GLabel 14900 6550 2    50   Input ~ 0
+p5_10
+Text GLabel 14900 7250 2    50   Input ~ 0
+p6_8
+Text GLabel 14400 7350 0    50   Input ~ 0
+p6_3
+Text GLabel 14900 7350 2    50   Input ~ 0
+p6_9
+Text GLabel 14400 7450 0    50   Input ~ 0
+p6_4
+Text GLabel 14900 7450 2    50   Input ~ 0
+p6_10
+Text GLabel 14400 7250 0    50   Input ~ 0
+p6_2
+Text GLabel 14400 7150 0    50   Input ~ 0
+p6_1
+Text GLabel 14900 7150 2    50   Input ~ 0
+p6_7
+Text GLabel 12500 4200 0    50   Input ~ 0
+button1
+Text GLabel 12500 4700 0    50   Input ~ 0
+button2
+Text GLabel 13900 4200 0    50   Input ~ 0
+led1
+Text GLabel 13900 4600 0    50   Input ~ 0
+led2
+Text GLabel 5500 8100 0    50   Input ~ 0
+gp6
+Text GLabel 5500 5400 0    50   Input ~ 0
+gp6
+Text GLabel 5500 5500 0    50   Input ~ 0
+gp13
+Text GLabel 5500 8200 0    50   Input ~ 0
+gp13
+Text GLabel 6000 8100 2    50   Input ~ 0
+gp12
+Text GLabel 6000 5400 2    50   Input ~ 0
+gp12
+Text GLabel 6000 8300 2    50   Input ~ 0
+gp16
+Text GLabel 6000 5600 2    50   Input ~ 0
+gp16
 $EndSCHEMATC
