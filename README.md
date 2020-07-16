@@ -21,7 +21,8 @@ Check ECP5 family datasheet for more information.
 ![board](hardware/board.jpg)
 
 * [Schematic](hardware/schematic.pdf)
-* [OHSPark project]() or [Gerbers](hardware/basic-ecp5-pcb-2020-07-16-fab.zip)
+* TODO [OHSPark project]() 
+* [Gerbers](hardware/basic-ecp5-pcb-2020-07-16-fab.zip)
 * 4 layer board: signal, gnd, 3.3v signal
 
 # BOM
@@ -32,17 +33,9 @@ Check ECP5 family datasheet for more information.
 * 12MHz oscillator SIT2001BI-S2-33E-12.000000G
 * 16MB FLASH IS25LP016D-JBLE (optional??).
 
-# Test
+# Test: 
 
-See the [test program](test/top.v). This makes a nice pulsing effect on LED2, and LED1 is the slow PWM clock.
-The buttons increase or decrease pulsing speed.
-
-    make prog
-
-Yosys and NextPNR are used to create the bitstream and then it's copied to the Raspberry Pi specified
-by PI_ADDR in the [Makefile](test/Makefile). 
-
-[Fomu-Flash](https://github.com/im-tomu/fomu-flash) is used to flash the SPI memory, or program the FPGA directly.
+TODO
 
 # Reference
 
