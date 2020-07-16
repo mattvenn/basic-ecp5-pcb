@@ -18,11 +18,11 @@ Check ECP5 family datasheet for more information.
 
 # PCB
 
-![board](hardware/board.JPG)
+![board](hardware/board.jpg)
 
 * [Schematic](hardware/schematic.pdf)
-* [OHSPark project]() or [Gerbers](hardware/.zip)
-* Cheap, 2 layer board. Not so good for fast signals.
+* [OHSPark project]() or [Gerbers](hardware/basic-ecp5-pcb-2020-07-16-fab.zip)
+* 4 layer board: signal, gnd, 3.3v signal
 
 # BOM
 
