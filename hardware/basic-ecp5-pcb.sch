@@ -4,10 +4,10 @@ EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 2
-Title "Matt-FPGA"
-Date "2019-12-30"
+Title "basic ecp5 board"
+Date "2020-07-16"
 Rev "0.1"
-Comp ""
+Comp "Matt Venn"
 Comment1 ""
 Comment2 ""
 Comment3 ""
