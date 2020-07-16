@@ -1,0 +1,11 @@
+; pcb config
+[board]
+mask_color = green/any
+silk_color = white
+material = FR4
+thickness = 1.6
+layers = 4
+copper = 35um
+
+[meta]
+name = basic ecp5
