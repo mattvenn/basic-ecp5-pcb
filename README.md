@@ -22,16 +22,26 @@ Check ECP5 family datasheet for more information.
 
 * [Schematic](hardware/schematic.pdf)
 * TODO [OHSPark project]() 
-* [Gerbers](hardware/basic-ecp5-pcb-2020-07-16-fab.zip)
+* [Gerbers](hardware/basic-ecp5-pcb-2020-07-17-fab.zip)
 * 4 layer board: signal, gnd, 3.3v signal
 
 # BOM
 
 * FPGA ecp5 45k part, 14mm bga with 256 pins, 0.8mm pitch, $15 LFE5U-45F-6BG256C 
-* 3.3v reg TLV73333PDBVT
-* 1.1v reg TLV73311PDBVT
+* 2 x TLV62568 DC/DC switchers for core (1.1v) and IO (3.3v).
+* 2.5v reg TLV73325PDBVT
 * 12MHz oscillator SIT2001BI-S2-33E-12.000000G
 * 16MB FLASH IS25LP016D-JBLE (optional??).
+
+# Review
+
+* core supply (1.1v) is now DC/DC for 1A using TLV62568
+* pmod and IO supply is now DC/DC for 1A using TLV62568
+* move ferrite beads to input side of psu
+* pullups on io2/3 of flash
+* pulldown on tclk of jtag
+* fix vias under bga by moving to 0.25mm drill 0.45mm annular ring
+* add more ground vias under BGA
 
 # Test: 
 

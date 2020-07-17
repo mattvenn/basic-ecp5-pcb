@@ -99,18 +99,6 @@ F 4 "ECP5U_45" H 1200 6950 60  0001 R CNN "manf#"
 $EndComp
 $Comp
 L Lattice_ECP_FPGA:ECP5U_45_CABGA256 U1
-U 8 1 5F1343A1
-P 5450 7850
-F 0 "U1" H 7580 7260 60  0000 L CNN
-F 1 "ECP5U_45_CABGA256" H 7580 7154 60  0000 L CNN
-F 2 "Package_BGA:BGA-256_14.0x14.0mm_Layout16x16_P0.8mm_Ball0.45mm_Pad0.32mm_NSMD" H 5600 7900 60  0001 R CNN
-F 3 "" H 5600 7700 60  0001 R CNN
-F 4 "ECP5U_45" H 5600 7800 60  0001 R CNN "manf#"
-	8    5450 7850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Lattice_ECP_FPGA:ECP5U_45_CABGA256 U1
 U 9 1 5F14250E
 P 13750 8350
 F 0 "U1" H 14280 8253 60  0000 L CNN
@@ -250,19 +238,6 @@ F 3 "" H 4900 10200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
-U 1 1 5F2DEE49
-P 5100 7550
-AR Path="/5F2DEE49" Ref="R?"  Part="1" 
-AR Path="/5F109712/5F2DEE49" Ref="R3"  Part="1" 
-F 0 "R3" V 4893 7550 50  0001 C CNN
-F 1 "10k" V 5100 7550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 5030 7550 50  0001 C CNN
-F 3 "~" H 5100 7550 50  0001 C CNN
-	1    5100 7550
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+1V1 #PWR0206
 U 1 1 5F2ECD32
 P 10150 8600
@@ -286,43 +261,39 @@ F 3 "" H 9900 8600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9900 8600 10050 8600
-Text GLabel 4600 9150 0    50   Input ~ 0
+Text GLabel 4400 9150 0    50   Input ~ 0
 sdo
-Text GLabel 4600 9050 0    50   Input ~ 0
+Text GLabel 4400 9050 0    50   Input ~ 0
 sdi
-Text GLabel 4600 7850 0    50   Input ~ 0
+Text GLabel 4400 7850 0    50   Input ~ 0
 sd_clk
-Text GLabel 4600 9450 0    50   Input ~ 0
+Text GLabel 4400 9450 0    50   Input ~ 0
 sd_cs
-Text GLabel 4600 9750 0    50   Input ~ 0
+Text GLabel 4400 9750 0    50   Input ~ 0
 creset
-Text GLabel 4600 8250 0    50   Input ~ 0
+Text GLabel 4400 8250 0    50   Input ~ 0
 cdone
-Text GLabel 4600 8950 0    50   Input ~ 0
+Text GLabel 4400 8950 0    50   Input ~ 0
 sd_io2
-Text GLabel 4600 8850 0    50   Input ~ 0
+Text GLabel 4400 8850 0    50   Input ~ 0
 sd_io3
 Wire Wire Line
-	4600 8250 5450 8250
+	4400 8250 5450 8250
 NoConn ~ 5450 8350
-Wire Wire Line
-	4600 9750 5300 9750
-Wire Wire Line
-	5100 7400 5100 7300
 Connection ~ 5100 7300
 Wire Wire Line
-	4600 9450 5200 9450
+	4400 9450 5200 9450
 NoConn ~ 5450 9650
 NoConn ~ 5450 9550
 NoConn ~ 5450 9250
 Wire Wire Line
-	4600 9150 5450 9150
+	4400 9150 5450 9150
 Wire Wire Line
-	4600 9050 5450 9050
+	4400 9050 5450 9050
 Wire Wire Line
-	4600 8950 5450 8950
+	4400 8950 4600 8950
 Wire Wire Line
-	4600 8850 5450 8850
+	4400 8850 4700 8850
 NoConn ~ 5450 8750
 NoConn ~ 5450 8650
 NoConn ~ 5450 8550
@@ -519,7 +490,7 @@ Text GLabel 13300 4900 0    50   Input ~ 0
 gp13
 Text GLabel 13300 4800 0    50   Input ~ 0
 gp12
-Text GLabel 4600 8450 0    50   Input ~ 0
+Text GLabel 4400 8450 0    50   Input ~ 0
 gp6
 NoConn ~ 850  2750
 NoConn ~ 850  3050
@@ -650,108 +621,29 @@ NoConn ~ 1050 9900
 NoConn ~ 1050 10100
 Text GLabel 9450 5100 0    50   Input ~ 0
 ce1
-$Comp
-L Device:R R?
-U 1 1 5F29923D
-P 4900 9950
-AR Path="/5F29923D" Ref="R?"  Part="1" 
-AR Path="/5F109712/5F29923D" Ref="R4"  Part="1" 
-F 0 "R4" V 4693 9950 50  0001 C CNN
-F 1 "10k" V 4900 9950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 4830 9950 50  0001 C CNN
-F 3 "~" H 4900 9950 50  0001 C CNN
-	1    4900 9950
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5F29DA37
-P 5000 7550
-AR Path="/5F29DA37" Ref="R?"  Part="1" 
-AR Path="/5F109712/5F29DA37" Ref="R5"  Part="1" 
-F 0 "R5" V 4793 7550 50  0001 C CNN
-F 1 "10k" V 5000 7550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 4930 7550 50  0001 C CNN
-F 3 "~" H 5000 7550 50  0001 C CNN
-	1    5000 7550
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5F29E8F7
-P 4800 9950
-AR Path="/5F29E8F7" Ref="R?"  Part="1" 
-AR Path="/5F109712/5F29E8F7" Ref="R7"  Part="1" 
-F 0 "R7" V 4593 9950 50  0001 C CNN
-F 1 "10k" V 4800 9950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 4730 9950 50  0001 C CNN
-F 3 "~" H 4800 9950 50  0001 C CNN
-	1    4800 9950
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	5000 8050 5450 8050
 Connection ~ 5200 9450
 Wire Wire Line
 	5200 9450 5450 9450
 Wire Wire Line
-	4600 7850 5100 7850
-$Comp
-L Device:R R?
-U 1 1 5F2D6179
-P 5200 7550
-AR Path="/5F2D6179" Ref="R?"  Part="1" 
-AR Path="/5F109712/5F2D6179" Ref="R8"  Part="1" 
-F 0 "R8" V 4993 7550 50  0001 C CNN
-F 1 "10k" V 5200 7550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 5130 7550 50  0001 C CNN
-F 3 "~" H 5200 7550 50  0001 C CNN
-	1    5200 7550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
 	5200 7700 5200 9450
 Wire Wire Line
 	5100 7700 5100 7850
 Connection ~ 5100 7850
-Wire Wire Line
-	5100 7850 5450 7850
-Wire Wire Line
-	5200 7400 5200 7300
-Wire Wire Line
-	5200 7300 5100 7300
 Text Notes 4550 7000 0    50   ~ 0
 cfg[2:0] = 010. MSPI mode
-$Comp
-L Device:R R?
-U 1 1 5F3073A3
-P 5300 7550
-AR Path="/5F3073A3" Ref="R?"  Part="1" 
-AR Path="/5F109712/5F3073A3" Ref="R14"  Part="1" 
-F 0 "R14" V 5093 7550 50  0001 C CNN
-F 1 "10k" V 5300 7550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 5230 7550 50  0001 C CNN
-F 3 "~" H 5300 7550 50  0001 C CNN
-	1    5300 7550
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	5300 7700 5300 9750
 Connection ~ 5300 9750
 Wire Wire Line
 	5300 9750 5450 9750
 Wire Wire Line
-	5300 7400 5300 7300
-Wire Wire Line
-	5300 7300 5200 7300
-Connection ~ 5200 7300
-Wire Wire Line
-	4600 8450 5450 8450
+	4400 8450 5450 8450
 Wire Wire Line
 	4800 10100 4900 10100
 Wire Wire Line
 	4900 10200 4900 10100
-Connection ~ 4900 10100
 Wire Wire Line
 	4900 9800 4900 8150
 Wire Wire Line
@@ -766,4 +658,178 @@ Wire Wire Line
 	4900 8150 5450 8150
 Wire Wire Line
 	4800 7950 5450 7950
+Wire Wire Line
+	4700 8850 4700 7700
+Connection ~ 4700 8850
+Wire Wire Line
+	4700 8850 5450 8850
+Wire Wire Line
+	4600 8950 4600 7700
+Connection ~ 4600 8950
+Wire Wire Line
+	4600 8950 5450 8950
+Wire Wire Line
+	4600 7400 4600 7300
+Connection ~ 5000 7300
+$Comp
+L Device:R R?
+U 1 1 5F18AE30
+P 12000 8450
+AR Path="/5F18AE30" Ref="R?"  Part="1" 
+AR Path="/5F109712/5F18AE30" Ref="R3"  Part="1" 
+F 0 "R3" V 11793 8450 50  0001 C CNN
+F 1 "10k" V 12000 8450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 11930 8450 50  0001 C CNN
+F 3 "~" H 12000 8450 50  0001 C CNN
+	1    12000 8450
+	-1   0    0    1   
+$EndComp
+Text Label 12000 8300 2    50   ~ 0
+tck
+$Comp
+L power:GND #PWR?
+U 1 1 5F18D5FC
+P 12000 8600
+AR Path="/5F18D5FC" Ref="#PWR?"  Part="1" 
+AR Path="/5F109712/5F18D5FC" Ref="#PWR0101"  Part="1" 
+F 0 "#PWR0101" H 12000 8350 50  0001 C CNN
+F 1 "GND" H 12005 8427 50  0000 C CNN
+F 2 "" H 12000 8600 50  0001 C CNN
+F 3 "" H 12000 8600 50  0001 C CNN
+	1    12000 8600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 7300 5200 7300
+Wire Wire Line
+	4600 7300 4700 7300
+Wire Wire Line
+	4700 7400 4700 7300
+Connection ~ 4700 7300
+Wire Wire Line
+	4700 7300 5000 7300
+Wire Wire Line
+	5100 7400 5100 7300
+Wire Wire Line
+	5200 7400 5200 7300
+Connection ~ 5200 7300
+Wire Wire Line
+	5200 7300 5300 7300
+Wire Wire Line
+	5300 7400 5300 7300
+$Comp
+L Device:R_Pack04_Split RN1
+U 1 1 5F2923DD
+P 4800 9950
+F 0 "RN1" H 4888 9996 50  0001 L CNN
+F 1 "10k" V 4800 9850 50  0000 L CNN
+F 2 "Resistor_SMD:R_Array_Concave_4x0603" V 4720 9950 50  0001 C CNN
+F 3 "~" H 4800 9950 50  0001 C CNN
+F 4 "EXBV8V103JV" H 4800 9950 50  0001 C CNN "manf#"
+	1    4800 9950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Pack04_Split RN1
+U 2 1 5F2B9F61
+P 5000 7550
+F 0 "RN1" H 5088 7596 50  0001 L CNN
+F 1 "10k" V 5000 7500 50  0000 L CNN
+F 2 "Resistor_SMD:R_Array_Concave_4x0603" V 4920 7550 50  0001 C CNN
+F 3 "~" H 5000 7550 50  0001 C CNN
+F 4 "EXBV8V103JV" H 5000 7550 50  0001 C CNN "manf#"
+	2    5000 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Pack04_Split RN2
+U 1 1 5F2BAD04
+P 4600 7550
+F 0 "RN2" H 4688 7596 50  0001 L CNN
+F 1 "10k" V 4600 7500 50  0000 L CNN
+F 2 "Resistor_SMD:R_Array_Concave_4x0603" V 4520 7550 50  0001 C CNN
+F 3 "~" H 4600 7550 50  0001 C CNN
+F 4 "EXBV8V103JV" H 4600 7550 50  0001 C CNN "manf#"
+	1    4600 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Pack04_Split RN2
+U 2 1 5F2BBBFC
+P 5100 7550
+F 0 "RN2" H 4600 7900 50  0001 L CNN
+F 1 "10k" V 5100 7500 50  0000 L CNN
+F 2 "Resistor_SMD:R_Array_Concave_4x0603" V 5020 7550 50  0001 C CNN
+F 3 "~" H 5100 7550 50  0001 C CNN
+F 4 "EXBV8V103JV" H 5100 7550 50  0001 C CNN "manf#"
+	2    5100 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Pack04_Split RN2
+U 3 1 5F2BC5CC
+P 5200 7550
+F 0 "RN2" H 5450 7900 50  0001 L CNN
+F 1 "10k" V 5200 7500 50  0000 L CNN
+F 2 "Resistor_SMD:R_Array_Concave_4x0603" V 5120 7550 50  0001 C CNN
+F 3 "~" H 5200 7550 50  0001 C CNN
+F 4 "EXBV8V103JV" H 5200 7550 50  0001 C CNN "manf#"
+	3    5200 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Pack04_Split RN2
+U 4 1 5F2BCE12
+P 4700 7550
+F 0 "RN2" H 4950 7950 50  0001 L CNN
+F 1 "10k" V 4700 7500 50  0000 L CNN
+F 2 "Resistor_SMD:R_Array_Concave_4x0603" V 4620 7550 50  0001 C CNN
+F 3 "~" H 4700 7550 50  0001 C CNN
+F 4 "EXBV8V103JV" H 4700 7550 50  0001 C CNN "manf#"
+	4    4700 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Pack04_Split RN1
+U 4 1 5F2C115D
+P 5300 7550
+F 0 "RN1" H 5388 7596 50  0001 L CNN
+F 1 "10k" V 5300 7450 50  0000 L CNN
+F 2 "Resistor_SMD:R_Array_Concave_4x0603" V 5220 7550 50  0001 C CNN
+F 3 "~" H 5300 7550 50  0001 C CNN
+F 4 "EXBV8V103JV" H 5300 7550 50  0001 C CNN "manf#"
+	4    5300 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Pack04_Split RN1
+U 3 1 5F2C06DF
+P 4900 9950
+F 0 "RN1" H 4988 9996 50  0001 L CNN
+F 1 "10k" V 4900 9850 50  0000 L CNN
+F 2 "Resistor_SMD:R_Array_Concave_4x0603" V 4820 9950 50  0001 C CNN
+F 3 "~" H 4900 9950 50  0001 C CNN
+F 4 "EXBV8V103JV" H 4900 9950 50  0001 C CNN "manf#"
+	3    4900 9950
+	-1   0    0    1   
+$EndComp
+Connection ~ 4900 10100
+Wire Wire Line
+	4400 9750 5300 9750
+Wire Wire Line
+	4400 7850 5100 7850
+Wire Wire Line
+	5100 7850 5450 7850
+$Comp
+L Lattice_ECP_FPGA:ECP5U_45_CABGA256 U1
+U 8 1 5F1343A1
+P 5450 7850
+F 0 "U1" H 7580 7260 60  0000 L CNN
+F 1 "ECP5U_45_CABGA256" H 7580 7154 60  0000 L CNN
+F 2 "Package_BGA:BGA-256_14.0x14.0mm_Layout16x16_P0.8mm_Ball0.45mm_Pad0.32mm_NSMD" H 5600 7900 60  0001 R CNN
+F 3 "" H 5600 7700 60  0001 R CNN
+F 4 "ECP5U_45" H 5600 7800 60  0001 R CNN "manf#"
+	8    5450 7850
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

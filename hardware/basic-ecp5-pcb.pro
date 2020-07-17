@@ -1,4 +1,4 @@
-update=Thu 16 Jul 2020 19:07:59 CEST
+update=Fri 17 Jul 2020 14:35:32 CEST
 version=1
 last_client=kicad
 [general]
@@ -24,13 +24,13 @@ RequireCourtyardDefinitions=0
 ProhibitOverlappingCourtyards=1
 MinTrackWidth=0.15
 MinViaDiameter=0.4
-MinViaDrill=0.3
+MinViaDrill=0.25
 MinMicroViaDiameter=0.2
 MinMicroViaDrill=0.09999999999999999
 MinHoleToHole=0.25
 TrackWidth1=0.15
-ViaDiameter1=0.6
-ViaDrill1=0.3
+ViaDiameter1=0.5
+ViaDrill1=0.254
 dPairWidth1=0.2
 dPairGap1=0.25
 dPairViaGap1=0.25
@@ -195,11 +195,11 @@ Enabled=0
 [pcbnew/Layer.F.Paste]
 Enabled=1
 [pcbnew/Layer.B.SilkS]
-Enabled=0
+Enabled=1
 [pcbnew/Layer.F.SilkS]
 Enabled=1
 [pcbnew/Layer.B.Mask]
-Enabled=0
+Enabled=1
 [pcbnew/Layer.F.Mask]
 Enabled=1
 [pcbnew/Layer.Dwgs.User]
@@ -227,10 +227,10 @@ Enabled=0
 [pcbnew/Netclasses]
 [pcbnew/Netclasses/Default]
 Name=Default
-Clearance=0.15
+Clearance=0.13
 TrackWidth=0.15
-ViaDiameter=0.6
-ViaDrill=0.3
+ViaDiameter=0.5
+ViaDrill=0.254
 uViaDiameter=0.3
 uViaDrill=0.1
 dPairWidth=0.2
@@ -238,10 +238,10 @@ dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/1]
 Name=power
-Clearance=0.16
+Clearance=0.13
 TrackWidth=0.4
-ViaDiameter=0.6
-ViaDrill=0.3
+ViaDiameter=0.5
+ViaDrill=0.4
 uViaDiameter=0.3
 uViaDrill=0.1
 dPairWidth=0.2
@@ -249,7 +249,7 @@ dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/2]
 Name=power5
-Clearance=0.16
+Clearance=0.13
 TrackWidth=0.8
 ViaDiameter=1
 ViaDrill=0.4
