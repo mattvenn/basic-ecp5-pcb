@@ -10,9 +10,9 @@
 Check ECP5 family datasheet for more information.
 
 * A clock input. Has to be provided by an oscillator, it doesn't have a crystal driver. Has to go to a PCLK pad
-* 1.1v core supply for the internal logic
-* 2.5v auxiliary power supply
-* 3.3v IO supply for the IO pins. In this design, all banks of IO have the same supply
+* 1.1v core supply for the internal logic. Should supply at least 600mA
+* 2.5v auxiliary power supply. Should supply 10mA
+* 3.3v IO supply for the IO pins. In this design, all banks of IO have the same supply. Same PSU is used for all PMODs, and is rated at 1A.
 * Get configured over SPI interface. This can be done directly by a microcontroller or a computer, or the bitstream can be programmed into some FLASH, and the FPGA will read it at boot. If FLASH isn't provided then the bitstream needs to be programmed at every power up or configuration reset. See sysconfig documentation for more info.
 * Decoupling capacitors for each IO bank.
 
@@ -33,7 +33,7 @@ Check ECP5 family datasheet for more information.
 * 12MHz oscillator SIT2001BI-S2-33E-12.000000G
 * 16MB FLASH IS25LP016D-JBLE (optional??).
 
-# Review
+# Design Review
 
 * core supply (1.1v) is now DC/DC for 1A using TLV62568
 * pmod and IO supply is now DC/DC for 1A using TLV62568
