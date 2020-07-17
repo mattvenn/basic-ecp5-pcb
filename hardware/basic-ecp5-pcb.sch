@@ -8053,10 +8053,6 @@ CA A2 3D BF 67 5E 78 A5 DA 03 01 00 00 B8 6E DE 13 2B EF DA F4 97 2A A6 4E 34 02
 00 45 00 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
-Text Label 6000 4200 0    50   ~ 0
-gp14
-Text Label 6000 4300 0    50   ~ 0
-gp15
 Text Label 6000 4400 0    50   ~ 0
 gp18
 $Comp
@@ -8252,10 +8248,6 @@ F 3 "" H 5500 7800 50  0001 C CNN
 	1    5500 7800
 	0    1    1    0   
 $EndComp
-Text Label 6000 6900 0    50   ~ 0
-gp14
-Text Label 6000 7000 0    50   ~ 0
-gp15
 Text Label 6000 7100 0    50   ~ 0
 gp18
 $Comp
@@ -9164,4 +9156,12 @@ $EndComp
 Wire Wire Line
 	1150 1800 1400 1800
 Connection ~ 1400 1800
+Text GLabel 6000 4200 2    50   Input ~ 0
+gp14
+Text GLabel 6000 4300 2    50   Input ~ 0
+gp15
+Text GLabel 6000 7000 2    50   Input ~ 0
+gp15
+Text GLabel 6000 6900 2    50   Input ~ 0
+gp14
 $EndSCHEMATC

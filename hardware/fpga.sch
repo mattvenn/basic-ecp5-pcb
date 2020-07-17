@@ -566,11 +566,9 @@ NoConn ~ 9450 4100
 NoConn ~ 9450 4200
 NoConn ~ 9450 4300
 NoConn ~ 9450 4400
-NoConn ~ 9450 4500
 NoConn ~ 9450 4600
 NoConn ~ 9450 4700
 NoConn ~ 9450 4800
-NoConn ~ 9450 4900
 NoConn ~ 9450 5000
 NoConn ~ 9450 5200
 NoConn ~ 9450 5300
@@ -832,4 +830,8 @@ F 4 "ECP5U_45" H 5600 7800 60  0001 R CNN "manf#"
 	8    5450 7850
 	1    0    0    -1  
 $EndComp
+Text GLabel 9450 4900 0    50   Input ~ 0
+gp15
+Text GLabel 9450 4500 0    50   Input ~ 0
+gp14
 $EndSCHEMATC

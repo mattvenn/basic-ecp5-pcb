@@ -43,6 +43,15 @@ Check ECP5 family datasheet for more information.
 * fix vias under bga by moving to 0.25mm drill 0.45mm annular ring
 * add more ground vias under BGA
 
+# RPi connection info
+
+TODO
+
+* serial
+* i2c
+* gpios
+* spi & 2 x ce
+
 # Test: 
 
 TODO
