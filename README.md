@@ -66,3 +66,7 @@ TODO
 * https://github.com/Spritetm/hadbadge2019_pcb
 * https://github.com/gregdavill/OrangeCrab
 * https://www.crowdsupply.com/radiona/ulx3s
+
+# License
+
+This project is licensed under the [Permissive CERN open hardware license v2](cern_ohl_p_v2.txt)
