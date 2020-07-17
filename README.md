@@ -71,3 +71,4 @@ TODO
 
 * Hardware is licensed under the [Permissive CERN open hardware license v2](cern_ohl_p_v2.txt)
 * Software is licensed under the [GNU Lesser General Public License v2.1](LICENSE)
+* Documentation is licensed under the [CCO](CC0_license)
