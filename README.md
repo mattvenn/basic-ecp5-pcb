@@ -58,7 +58,7 @@ See [test/mv_ecp.lpf](test/mv_ecp.lpf) for FPGA pinning. The following are the p
 
 Simple [test](test/blinky.v) connects buttons to LEDs and toggles all other pins every second.
 
-Run make in ./hardware to create the configuration file for a simple test.
+Run make in [./test](test) to create the configuration file for a simple test.
 
 # Reference
 
