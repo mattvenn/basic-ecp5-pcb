@@ -21,17 +21,18 @@ Check ECP5 family datasheet for more information.
 ![board](hardware/board.jpg)
 
 * [Schematic](hardware/schematic.pdf)
-* TODO [OHSPark project]() 
-* [Gerbers](hardware/basic-ecp5-pcb-2020-07-17-fab.zip)
-* 4 layer board: signal, gnd, 3.3v signal
+* [OHSPark project](https://oshpark.com/shared_projects/pCsPoHNi) 
+* [Gerbers](hardware/hardware/basic-ecp5-pcb-2020-07-20-fab.zip)
+
+* 4 layer board stackup: signal, gnd, 3.3v, signal
 
 # BOM
 
-* FPGA ecp5 45k part, 14mm bga with 256 pins, 0.8mm pitch, $15 LFE5U-45F-6BG256C 
+* FPGA ecp5 12k (LFE5U-12F-6BG256C) or 45k (LFE5U-45F-6BG256C) part, 14mm bga with 256 pins, 0.8mm pitch 
 * 2 x TLV62568 DC/DC switchers for core (1.1v) and IO (3.3v).
 * 2.5v reg TLV73325PDBVT
-* 12MHz oscillator SIT2001BI-S2-33E-12.000000G
-* 16MB FLASH IS25LP016D-JBLE (optional??).
+* 16MHz oscillator SIT2001BI-S2-33N-16.000000G
+* 16MB FLASH IS25LP016D-JBLE
 
 # Design Review
 
@@ -45,16 +46,19 @@ Check ECP5 family datasheet for more information.
 
 # RPi connection info
 
-TODO
+See (test/mv-ecp.lpf) for FPGA pinning. The following are the physical pins on the raspberry pi:
 
-* serial
-* i2c
-* gpios
-* spi & 2 x ce
+* serial: TX, RX on pins 8 and 10
+* I2C: bitbanged on pins 38 and 40. Optional pullup resistors R1 & R2. Need to set up in boot/config.txt
+* GPIOs: pins 31, 32, 33, 36.
+* SPI: SDO, SDI, CLK, CE0 on pins 19, 21, 23, 24.
+* Extra SPI CE1: pin 26 
 
 # Test: 
 
-TODO
+Simple [test](hardware/blinky.v) connects buttons to LEDs and toggles all other pins every second.
+
+Run make in ./hardware to create the configuration file for a simple test.
 
 # Reference
 
