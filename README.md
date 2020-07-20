@@ -46,7 +46,7 @@ Check ECP5 family datasheet for more information.
 
 # RPi connection info
 
-See (test/mv-ecp.lpf) for FPGA pinning. The following are the physical pins on the raspberry pi:
+See [test/mv-ecp.lpf](test/mv-ecp.lpf) for FPGA pinning. The following are the physical pins on the raspberry pi:
 
 * serial: TX, RX on pins 8 and 10
 * I2C: bitbanged on pins 38 and 40. Optional pullup resistors R1 & R2. Need to set up in boot/config.txt
@@ -56,7 +56,7 @@ See (test/mv-ecp.lpf) for FPGA pinning. The following are the physical pins on t
 
 # Test: 
 
-Simple [test](hardware/blinky.v) connects buttons to LEDs and toggles all other pins every second.
+Simple [test](test/blinky.v) connects buttons to LEDs and toggles all other pins every second.
 
 Run make in ./hardware to create the configuration file for a simple test.
 
