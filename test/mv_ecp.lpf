@@ -18,7 +18,7 @@ LOCATE COMP "led1"       SITE "R3";
 LOCATE COMP "led2"       SITE "T3";
 
 # spi
-LOCATE COMP "spi_clk"     SITE "N9";
+#the spi clock pin on N9 is not available in the lpf file, have to use the USRMCLK primitive in the verilog
 LOCATE COMP "spi_sdio[3]" SITE "N7";
 LOCATE COMP "spi_sdio[2]" SITE "M7";
 LOCATE COMP "spi_sdio[0]" SITE "T7";

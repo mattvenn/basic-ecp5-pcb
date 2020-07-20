@@ -13,10 +13,10 @@ all: $(PROJ).svf dfu_flash
 	yosys -p "synth_ecp5 -json $@" $<
 
 %_out.config: %.json
-	nextpnr-ecp5 --json $< --lpf $(CONSTR) --textcfg $@ --45k --package CABGA256 --speed 8
+	/usr/local/bin/nextpnr-ecp5 --json $< --lpf $(CONSTR) --textcfg $@ --12k --package CABGA256 --speed 8
 
 %.bit: %_out.config
-	ecppack --svf-rowsize 100000  --spimode $(FLASH_MODE) --freq $(FLASH_FREQ) \
+	/usr/bin/ecppack --svf-rowsize 100000  --spimode $(FLASH_MODE) --freq $(FLASH_FREQ) \
 		--svf $(PROJ).svf --input $< --bit $@
 
 $(PROJ).svf: $(PROJ).bit

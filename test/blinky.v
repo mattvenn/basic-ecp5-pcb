@@ -9,7 +9,7 @@ module top(
     output wire [7:0] pmod6,
     output wire gp6, gp12, gp13, gp14, gp15, gp16, ce1,
     output wire led1, led2,
-    //output wire spi_clk,
+//    output wire spi_clk,
     output wire spi_cs,
     output wire [3:0] spi_sdio,
     input wire button1, button2
@@ -45,8 +45,14 @@ module top(
     assign led1 = button1;
     assign led2 = button2;
 
-//    assign spi_clk  = blink; // this pin fails with my nextpnr - update and check
+    // https://github.com/ironsteel/nes_ecp5/blob/master/top.v#L70
+    // the spi clock pin is not available in the lpf file, have to use the USRMCLK primitive
+    wire spi_clk = blink;
+    wire tristate = 1'b0;
+    USRMCLK u1 (.USRMCLKI(spi_clk), .USRMCLKTS(tristate));
+
     assign spi_sdio = blink ? 4'b1111 : 4'b0000;
     assign spi_cs   = blink;
+    wire flash_sck;
 
 endmodule
