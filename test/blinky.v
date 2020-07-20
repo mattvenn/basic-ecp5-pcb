@@ -9,7 +9,7 @@ module top(
     output wire [7:0] pmod6,
     output wire gp6, gp12, gp13, gp14, gp15, gp16, ce1,
     output wire led1, led2,
-//    output wire spi_clk,
+//    output wire spi_clk, // Can't do this - see below for spi clock pin control.
     output wire spi_cs,
     output wire [3:0] spi_sdio,
     input wire button1, button2
