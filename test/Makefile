@@ -5,15 +5,16 @@ TRELLIS=/usr/share/trellis
 FLASH_MODE=qspi
 #Image read freq, in MHz: 2.4, 4.8, 9.7, 19.4, 38.8, 62.0
 FLASH_FREQ=38.8 #MHz
+DEVICE=45k
 
 
 all: $(PROJ).svf dfu_flash
 
 %.json: %.v
-	yosys -p "synth_ecp5 -json $@" $<
+	yosys -l yosys.log -p "synth_ecp5 -json $@" $<
 
 %_out.config: %.json
-	/usr/local/bin/nextpnr-ecp5 --json $< --lpf $(CONSTR) --textcfg $@ --12k --package CABGA256 --speed 8
+	/usr/local/bin/nextpnr-ecp5 -l nextpnr.log --json $< --lpf $(CONSTR) --textcfg $@ --$(DEVICE) --package CABGA256 --speed 8
 
 %.bit: %_out.config
 	/usr/bin/ecppack --svf-rowsize 100000  --spimode $(FLASH_MODE) --freq $(FLASH_FREQ) \
