@@ -304,7 +304,7 @@ U 1 1 5F472499
 P 12950 8500
 F 0 "J10" H 13000 8917 50  0000 C CNN
 F 1 "Conn_02x05_Odd_Even" H 13000 8826 50  0000 C CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical" H 12950 8500 50  0001 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" H 12950 8500 50  0001 C CNN
 F 3 "~" H 12950 8500 50  0001 C CNN
 	1    12950 8500
 	-1   0    0    -1  
@@ -834,4 +834,49 @@ Text GLabel 9450 4900 0    50   Input ~ 0
 gp15
 Text GLabel 9450 4500 0    50   Input ~ 0
 gp14
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5F17125F
+P 3900 7100
+F 0 "TP2" H 3958 7172 50  0000 L CNN
+F 1 "TestPoint" H 3958 7127 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 4100 7100 50  0001 C CNN
+F 3 "~" H 4100 7100 50  0001 C CNN
+	1    3900 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5F173D0F
+P 4050 7100
+F 0 "TP4" H 4108 7172 50  0000 L CNN
+F 1 "TestPoint" H 4108 7127 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 4250 7100 50  0001 C CNN
+F 3 "~" H 4250 7100 50  0001 C CNN
+	1    4050 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP7
+U 1 1 5F1748F6
+P 4200 7100
+F 0 "TP7" H 4258 7172 50  0000 L CNN
+F 1 "TestPoint" H 4258 7127 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 4400 7100 50  0001 C CNN
+F 3 "~" H 4400 7100 50  0001 C CNN
+	1    4200 7100
+	1    0    0    -1  
+$EndComp
+Text Label 5000 8050 2    50   ~ 0
+cfg_1
+Text Label 5000 8150 2    50   ~ 0
+cfg_2
+Text Label 4800 7950 0    50   ~ 0
+cfg_0
+Text Label 3900 7100 3    50   ~ 0
+cfg_0
+Text Label 4050 7100 3    50   ~ 0
+cfg_1
+Text Label 4200 7100 3    50   ~ 0
+cfg_2
 $EndSCHEMATC
