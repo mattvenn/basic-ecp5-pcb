@@ -1,11 +1,11 @@
-# Aim
+## ECP5 FPGA dev board
 
 * Make an ECP5 FPGA dev board
 * Keep it super simple and cheap
 * Configured by on-board FLASH or direct with a Raspberry Pi
 * 6 PMODs, 2 buttons, 2 LEDs, FLASH for configuration bitstreams.
 
-# What a Lattice ecp5 FPGA needs
+## What a Lattice ecp5 FPGA needs
 
 Check ECP5 family datasheet for more information.
 
@@ -16,7 +16,7 @@ Check ECP5 family datasheet for more information.
 * Get configured over SPI interface. This can be done directly by a microcontroller or a computer, or the bitstream can be programmed into some FLASH, and the FPGA will read it at boot. If FLASH isn't provided then the bitstream needs to be programmed at every power up or configuration reset. See sysconfig documentation for more info.
 * Decoupling capacitors for each IO bank.
 
-# PCB
+## PCB
 
 ![board](hardware/board.jpg)
 
@@ -26,7 +26,7 @@ Check ECP5 family datasheet for more information.
 
 * 4 layer board stackup: signal, gnd, 3.3v, signal
 
-# BOM
+## BOM
 
 * FPGA ecp5 12k (LFE5U-12F-6BG256C) or 45k (LFE5U-45F-6BG256C) part, 14mm bga with 256 pins, 0.8mm pitch 
 * 2 x TLV62568 DC/DC switchers for core (1.1v) and IO (3.3v).
@@ -34,7 +34,7 @@ Check ECP5 family datasheet for more information.
 * 16MHz oscillator SIT2001BI-S2-33N-16.000000G
 * 16MB FLASH IS25LP016D-JBLE
 
-# Design Review
+## Design Review
 
 * core supply (1.1v) is now DC/DC for 1A using TLV62568
 * pmod and IO supply is now DC/DC for 1A using TLV62568
@@ -44,7 +44,7 @@ Check ECP5 family datasheet for more information.
 * fix vias under bga by moving to 0.25mm drill 0.45mm annular ring
 * add more ground vias under BGA
 
-# RPi connection info
+## RPi connection info
 
 See [test/mv_ecp.lpf](test/mv_ecp.lpf) for FPGA pinning. The following are the physical pins on the raspberry pi:
 
@@ -54,25 +54,29 @@ See [test/mv_ecp.lpf](test/mv_ecp.lpf) for FPGA pinning. The following are the p
 * SPI: SDO, SDI, CLK, CE0 on pins 19, 21, 23, 24.
 * Extra SPI CE1: pin 26 
 
-# Test: 
+## Test: 
 
 Simple [test](test/blinky.v) connects buttons to LEDs and toggles all other pins every second.
 
 Run make in [./test](test) to create the configuration file for a simple test.
 
-# Reference
+## Reference
 
 * http://www.latticesemi.com/ecp5
 * In particular, the ECP5 and ECP5-5G Hardware Checklist is very useful
 
-# Inspiration
+## Inspiration
 
 * https://github.com/Spritetm/hadbadge2019_pcb
 * https://github.com/gregdavill/OrangeCrab
 * https://www.crowdsupply.com/radiona/ulx3s
 
-# License
+## License
 
 * Hardware is licensed under the [Permissive CERN open hardware license v2](cern_ohl_p_v2.txt)
 * Software is licensed under the [GNU Lesser General Public License v2.1](LICENSE)
 * Documentation is licensed under the [CCO](CC0_license)
+
+# Open Source Hardware
+
+This board is an OSHWA approved design: [ES000012](https://certification.oshwa.org/es000012.html)
