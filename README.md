@@ -46,7 +46,7 @@ Check ECP5 family datasheet for more information.
 
 ## Errata
 
-* Add missing qspi to the Pi to be able too program bit stream faster.
+* Add missing qspi to the Pi to be able to program bitstream faster.
 
 ## RPi connection info
 
