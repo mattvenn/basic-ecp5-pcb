@@ -44,6 +44,10 @@ Check ECP5 family datasheet for more information.
 * fix vias under bga by moving to 0.25mm drill 0.45mm annular ring
 * add more ground vias under BGA
 
+## Errata
+
+* Add missing qspi to the Pi to be able too program bit stream faster.
+
 ## RPi connection info
 
 See [test/mv_ecp.lpf](test/mv_ecp.lpf) for FPGA pinning. The following are the physical pins on the raspberry pi:
@@ -58,7 +62,13 @@ See [test/mv_ecp.lpf](test/mv_ecp.lpf) for FPGA pinning. The following are the p
 
 Simple [test](test/blinky.v) connects buttons to LEDs and toggles all other pins every second.
 
-Run make in [./test](test) to create the configuration file for a simple test.
+Yosys and NextPNR are used to create the bitstream and then it's copied to the Raspberry Pi specified
+by PI_ADDR in the [Makefile](test/Makefile). 
+
+[Fomu-Flash](https://github.com/im-tomu/fomu-flash) is used to flash the SPI memory. Clone the repo on the Pi and set
+the path in the Makefile with FOMU_FLASH.
+
+Run make in [./test](test) to build, copy and program the bitstream.
 
 ## Reference
 
