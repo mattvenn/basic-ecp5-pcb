@@ -16,23 +16,30 @@ module top(
 
 );
 
-    localparam CLK_SPEED = 12_000_000;
+    localparam CLK_SPEED = 240_000;
     localparam CLK_W = $clog2(CLK_SPEED);
     reg [CLK_W-1:0] counter = 0;
     reg blink = 0;
+    reg [47:0] shift = 48'b1;
+
     always @(posedge clk) begin
         counter <= counter + 1;
         if(counter == CLK_SPEED - 1) begin
             counter <= 0;  
             blink <= !blink;
+            shift <= {shift[0], shift[47:1]};
         end
     end
-    assign pmod1 = blink ? 8'hFF : 8'h00;
-    assign pmod2 = blink ? 8'hFF : 8'h00;
-    assign pmod3 = blink ? 8'hFF : 8'h00;
-    assign pmod4 = blink ? 8'hFF : 8'h00;
-    assign pmod5 = blink ? 8'hFF : 8'h00;
-    assign pmod6 = blink ? 8'hFF : 8'h00;
+
+    // flash all the pmods in sequence
+    assign pmod1 = shift[7:0];
+    assign pmod2 = shift[15:8];
+    assign pmod3 = shift[23:16];
+    assign pmod4 = shift[31:24];
+    assign pmod5 = shift[39:32];
+    assign pmod6 = shift[47:40];
+
+    // blink all the gpios
     assign gp6  = blink;
     assign gp12 = blink;
     assign gp13 = blink;
@@ -53,6 +60,5 @@ module top(
 
     assign spi_sdio = blink ? 4'b1111 : 4'b0000;
     assign spi_cs   = blink;
-    wire flash_sck;
 
 endmodule

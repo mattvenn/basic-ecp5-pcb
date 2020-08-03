@@ -1,14 +1,11 @@
 PROJ=blinky
 CONSTR=mv_ecp.lpf
 TRELLIS=/usr/share/trellis
-#Image read mode: qspi, dual-spi, fast-read
-FLASH_MODE=qspi
-#Image read freq, in MHz: 2.4, 4.8, 9.7, 19.4, 38.8, 62.0
-FLASH_FREQ=38.8 #MHz
-DEVICE=45k
+DEVICE=12k
+PI_ADDR = pi@raspberrypi.local
+FOMU_FLASH = ~/fomu-flash/fomu-flash
 
-
-all: $(PROJ).svf dfu_flash
+all: $(PROJ).svf prog-flash
 
 %.json: %.v
 	yosys -l yosys.log -p "synth_ecp5 -json $@" $<
@@ -17,8 +14,7 @@ all: $(PROJ).svf dfu_flash
 	/usr/local/bin/nextpnr-ecp5 -l nextpnr.log --json $< --lpf $(CONSTR) --textcfg $@ --$(DEVICE) --package CABGA256 --speed 8
 
 %.bit: %_out.config
-	/usr/bin/ecppack --svf-rowsize 100000  --spimode $(FLASH_MODE) --freq $(FLASH_FREQ) \
-		--svf $(PROJ).svf --input $< --bit $@
+	/usr/bin/ecppack --svf-rowsize 100000 --svf $(PROJ).svf --input $< --bit $@
 
 $(PROJ).svf: $(PROJ).bit
 
@@ -28,9 +24,9 @@ prog: $(PROJ).svf
 clean:
 	rm -f $(PROJ).json $(PROJ).svf $(PROJ).bit $(PROJ)_out.config
 
-dfu_flash: $(PROJ).bit
-	dfu-util$(EXE) -d 1d50:614a,1d50:614b -a 2 -R -D $(PROJ).bit
+prog-flash: $(PROJ).bit
+	scp $< $(PI_ADDR):/tmp/$(PROJECT).bin
+	ssh $(PI_ADDR) "sudo $(FOMU_FLASH) -w /tmp/$(PROJECT).bin; sudo $(FOMU_FLASH) -r"
 
 .PHONY: prog clean
 .PRECIOUS: ${PROJ}.json ${PROJ}_out.config
-
