@@ -47,6 +47,8 @@ Check ECP5 family datasheet for more information.
 ## Errata
 
 * Add missing qspi to the Pi to be able to program bitstream faster.
+* configuration bits for FPGA should be tied to gnd not through a 10k resistor. The voltage is about 1v, so might
+  be a little close to the threshold of the 3.3v IOBANK supply. Replace with 0Ohm resistors? Or just tie to gnd?
 
 ## RPi connection info
 
