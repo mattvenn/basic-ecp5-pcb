@@ -16,11 +16,6 @@ all: $(PROJ).svf prog-flash
 %.bit: %_out.config
 	/usr/bin/ecppack --svf-rowsize 100000 --svf $(PROJ).svf --input $< --bit $@
 
-$(PROJ).svf: $(PROJ).bit
-
-prog: $(PROJ).svf
-	openocd -f ../openocd.cfg -c "init; svf  $<; exit"
-
 clean:
 	rm -f $(PROJ).json $(PROJ).svf $(PROJ).bit $(PROJ)_out.config
 
