@@ -9193,33 +9193,6 @@ Text GLabel 6000 7000 2    50   Input ~ 0
 gp15
 Text GLabel 6000 6900 2    50   Input ~ 0
 gp14
-$Comp
-L Device:R R14
-U 1 1 5F15DC38
-P 1150 2000
-F 0 "R14" H 950 2050 50  0000 L CNN
-F 1 "500k" V 1150 1900 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 1080 2000 50  0001 C CNN
-F 3 "~" H 1150 2000 50  0001 C CNN
-	1    1150 2000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0106
-U 1 1 5F15E1E2
-P 1150 2150
-F 0 "#PWR0106" H 1150 1900 50  0001 C CNN
-F 1 "GND" H 1155 1977 50  0000 C CNN
-F 2 "" H 1150 2150 50  0001 C CNN
-F 3 "" H 1150 2150 50  0001 C CNN
-	1    1150 2150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1150 1850 1150 1800
-Connection ~ 1150 1800
-Text Notes 800  2600 0    50   ~ 0
-500k as specced\nby dc converters
 Text Notes 5700 1250 0    50   ~ 0
 r1
 Text Notes 5700 1550 0    50   ~ 0
