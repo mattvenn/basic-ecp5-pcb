@@ -59,8 +59,14 @@ See [test/mv_ecp.lpf](test/mv_ecp.lpf) for FPGA pinning. The following are the p
 * serial: TX, RX on pins 8 and 10
 * I2C: bitbanged on pins 38 and 40. Optional pullup resistors R1 & R2. Need to set up in boot/config.txt
 * GPIOs: pins 31, 32, 33, 36.
-* SPI: SDO, SDI, CLK, CE0 on pins 19, 21, 23, 24.
+* SPI: SDO, SDI, CLK, CE0 on pins 19, 21, 23, 24. These are connected to the onboard FLASH for bitstream config.
 * Extra SPI CE1: pin 26 
+
+### RPi Gotchas
+
+* fomu_flash will leave the SPI device in an unusable state. Run sudo rmmod spi_bcm2835 && sudo modprobe spi_bcm2835 to reset it.
+* connected I2C pins are just GPIOs. I have found the Pi's I2C hardware unusable, so always use the slower bitbanged version. 
+  To enable add this to /boot/config.txt: dtoverlay=i2c-gpio,i2c_gpio_sda=21,i2c_gpio_scl=20,i2c_gpio_delay_us=8,bus=3
 
 ## Test: 
 
