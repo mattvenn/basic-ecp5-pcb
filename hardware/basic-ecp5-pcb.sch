@@ -152,10 +152,10 @@ L Memory_Flash:W25Q128JVS U2
 U 1 1 5E0FA08B
 P 2450 7600
 F 0 "U2" H 2700 8150 50  0000 C CNN
-F 1 "IS25LP016D-JBLE" H 2450 8350 50  0000 C CNN
+F 1 "W25Q128JVSIM" H 2450 8350 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_5.23x5.23mm_P1.27mm" H 2450 7600 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/2622002.pdf?_ga=2.84155929.1437906943.1577705103-1456622639.1577384340" H 2450 7600 50  0001 C CNN
-F 4 "IS25LP016D-JBLE-TR‎" H 2450 7600 50  0001 C CNN "manf#"
+F 3 "https://www.digikey.es/es/datasheets/winbond-electronics/winbond-electronicsw25q128jvdtr20revc200327201820plus" H 2450 7600 50  0001 C CNN
+F 4 "W25Q128JVSIM" H 2450 7600 50  0001 C CNN "manf#"
 	1    2450 7600
 	1    0    0    -1  
 $EndComp
@@ -796,7 +796,7 @@ F 3 "" H 14900 7550 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text Notes 1850 6700 0    50   ~ 0
-16Mb FLASH supports 0Bh fast read
+16Mbyte FLASH supports 0Bh fast read. \nSame model as used in IceBreaker
 $Comp
 L Mechanical:MountingHole_Pad H1
 U 1 1 5E0B6BAD

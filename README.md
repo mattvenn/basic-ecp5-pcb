@@ -34,7 +34,7 @@ Check ECP5 family datasheet for more information.
 * 2 x TLV62568 DC/DC switchers for core (1.1v) and IO (3.3v).
 * 2.5v reg TLV73325PDBVT
 * 16MHz oscillator SIT2001BI-S2-33N-16.000000G
-* 16MB FLASH IS25LP016D-JBLE
+* 16MB FLASH W25Q128JVSIM (same as icebreaker)
 
 ## Design Review
 
@@ -51,6 +51,7 @@ Check ECP5 family datasheet for more information.
 * Add missing qspi to the Pi to be able to program bitstream faster.
 * configuration bits for FPGA should be tied to gnd not through a 10k resistor. The voltage is about 1v, so might
   be a little close to the threshold of the 3.3v IOBANK supply. Replace with 0Ohm resistors? Or just tie to gnd?
+* used IS25LP016D-JBLE as flash, but it has problems with enabling QE for QSPI. Relace with the model used on icebreaker
 
 ## RPi connection info
 
