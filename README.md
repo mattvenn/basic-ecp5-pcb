@@ -92,6 +92,10 @@ Run make in [./test](test) to build, copy and program the bitstream.
 * https://github.com/gregdavill/OrangeCrab
 * https://www.crowdsupply.com/radiona/ulx3s
 
+## Attribution
+
+* ECP5 library part for Kicad created with https://github.com/xesscorp/KiCad-Schematic-Symbol-Libraries
+
 ## License
 
 * Hardware is licensed under the [Permissive CERN open hardware license v2](cern_ohl_p_v2.txt)
