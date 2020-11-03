@@ -1,6 +1,6 @@
 PROJ=blinky
 CONSTR=mv_ecp.lpf
-DEVICE=45k
+DEVICE=12k # tested with 12k and 45k
 PI_ADDR = pi@fpga.local
 FOMU_FLASH = ~/fomu-flash/fomu-flash
 
