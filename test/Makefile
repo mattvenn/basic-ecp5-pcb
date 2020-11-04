@@ -1,7 +1,7 @@
 PROJ=blinky
 CONSTR=mv_ecp.lpf
 DEVICE=12k # tested with 12k and 45k
-PI_ADDR = pi@fpga.local
+PI_ADDR = pi@raspberrypi.local
 FOMU_FLASH = ~/fomu-flash/fomu-flash
 
 all: prog
@@ -20,7 +20,10 @@ clean:
 
 prog: $(PROJ).bit
 	scp $< $(PI_ADDR):/tmp/$(PROJ).bin
-	ssh $(PI_ADDR) "sudo $(FOMU_FLASH) -w /tmp/$(PROJ).bin; sudo $(FOMU_FLASH) -r"
+	ssh $(PI_ADDR) "gpio -g mode 6 in; sudo $(FOMU_FLASH) -w /tmp/$(PROJ).bin; sudo $(FOMU_FLASH) -r"
+
+blink:
+	ssh $(PI_ADDR) "gpio -g mode 11 out; gpio -g toggle 11; sleep 1; gpio -g toggle 11"
 
 .PHONY: prog clean
 .PRECIOUS: ${PROJ}.json ${PROJ}_out.config
