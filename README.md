@@ -52,7 +52,7 @@ Check ECP5 family datasheet for more information.
 * configuration bits for FPGA should be tied to gnd not through a 10k resistor. The voltage is about 1v, so might
   be a little close to the threshold of the 3.3v IOBANK supply. Replace with 0Ohm resistors? Or just tie to gnd?
 * used IS25LP016D-JBLE as flash, but it has problems with enabling QE for QSPI. Relace with the model used on icebreaker
-* ecp5 SPI clock pin can't be used as an input, so have to [add a bodge wire](https://github.com/mattvenn/basic-ecp5-pcb/issues/3) for SPI peripheral comms with Pi
+* ecp5 SPI clock pin can't be used as an input, so have to [add a bodge wire](https://github.com/mattvenn/basic-ecp5-pcb/issues/3) for SPI peripheral comms with Pi. See the test-spi-clk-in branch for a workaround.
 
 ## RPi connection info
 
