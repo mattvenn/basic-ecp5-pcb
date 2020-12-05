@@ -4,6 +4,7 @@
 * Keep it super simple and cheap
 * Configured by on-board FLASH or direct with a Raspberry Pi
 * 6 PMODs, 2 buttons, 2 LEDs, FLASH for configuration bitstreams.
+* buttons are active low, LEDs are active low.
 
 There is also an iCE40 version of this board: https://github.com/mattvenn/first-fpga-pcb
 
@@ -81,6 +82,10 @@ by PI_ADDR in the [Makefile](test/Makefile).
 the path in the Makefile with FOMU_FLASH.
 
 Run make in [./test](test) to build, copy and program the bitstream.
+
+## PicoRV32 PicoSoC
+
+I have adapted Claire Wolf's PicoRV32 Picosoc for this board: https://github.com/mattvenn/picorv32/tree/ecp5/picosoc
 
 ## Reference
 
