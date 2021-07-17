@@ -88,7 +88,7 @@ Wire Wire Line
 Connection ~ 13950 1150
 Connection ~ 13150 1150
 $Comp
-L clock:SiT2001B X1
+L basic-ecp5-pcb-rescue:SiT2001B-clock X1
 U 1 1 5E0EF068
 P 1900 4600
 F 0 "X1" H 2200 4850 50  0000 L CNN
@@ -8363,78 +8363,14 @@ Text Label 4200 5000 0    50   ~ 0
 gp7
 Text Notes 4500 4350 0    50   ~ 0
 ce0
-Text Label 4200 5300 0    50   ~ 0
-gp20
 Text Label 4200 5400 0    50   ~ 0
-gp21
+gp3
 Text Notes 4500 5350 0    50   ~ 0
 used for i2c
 Text Label 4100 5400 2    50   ~ 0
 p3_10
 Text Label 4100 5300 2    50   ~ 0
 p3_9
-$Comp
-L Device:R R1
-U 1 1 5EA3B90B
-P 3950 5150
-F 0 "R1" V 3743 5150 50  0001 C CNN
-F 1 "4.7k" V 3950 5150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 3880 5150 50  0001 C CNN
-F 3 "~" H 3950 5150 50  0001 C CNN
-F 4 "RC0805FR-0710KL" H 3950 5150 50  0001 C CNN "manf#"
-	1    3950 5150
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:+3.3V #PWR0102
-U 1 1 5EA4133C
-P 3800 5150
-F 0 "#PWR0102" H 3800 5000 50  0001 C CNN
-F 1 "+3.3V" H 3815 5323 50  0000 C CNN
-F 2 "" H 3800 5150 50  0001 C CNN
-F 3 "" H 3800 5150 50  0001 C CNN
-	1    3800 5150
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	4100 5300 4150 5300
-Wire Wire Line
-	4100 5400 4150 5400
-Wire Wire Line
-	4100 5150 4150 5150
-Wire Wire Line
-	4150 5150 4150 5300
-Connection ~ 4150 5300
-Wire Wire Line
-	4150 5300 4200 5300
-$Comp
-L Device:R R2
-U 1 1 5EA574EA
-P 3950 5500
-F 0 "R2" V 3743 5500 50  0001 C CNN
-F 1 "4.7k" V 3950 5500 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 3880 5500 50  0001 C CNN
-F 3 "~" H 3950 5500 50  0001 C CNN
-F 4 "RC0805FR-0710KL" H 3950 5500 50  0001 C CNN "manf#"
-	1    3950 5500
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	4150 5400 4100 5500
-Connection ~ 4150 5400
-Wire Wire Line
-	4150 5400 4200 5400
-$Comp
-L power:+3.3V #PWR0194
-U 1 1 5EA5BBE3
-P 3800 5500
-F 0 "#PWR0194" H 3800 5350 50  0001 C CNN
-F 1 "+3.3V" H 3815 5673 50  0000 C CNN
-F 2 "" H 3800 5500 50  0001 C CNN
-F 3 "" H 3800 5500 50  0001 C CNN
-	1    3800 5500
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	4100 5000 4200 5000
 Text Notes 3900 4800 0    50   ~ 0
@@ -9217,4 +9153,22 @@ Wire Notes Line
 	600  3100 15150 3100
 Text Notes 4350 6400 0    197  Italic 39
 Raspberry Pi Pinning
+Wire Wire Line
+	4100 5300 4200 5300
+Text Label 4200 5300 0    50   ~ 0
+gp2
+Wire Wire Line
+	4100 5400 4200 5400
+Text GLabel 5150 4000 0    50   Input ~ 0
+sd_io2
+Text GLabel 5150 4150 0    50   Input ~ 0
+sd_io3
+Text Label 5300 4000 0    50   ~ 0
+gp24
+Wire Wire Line
+	5150 4000 5300 4000
+Text Label 5300 4150 0    50   ~ 0
+gp25
+Wire Wire Line
+	5150 4150 5300 4150
 $EndSCHEMATC

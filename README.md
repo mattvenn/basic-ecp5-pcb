@@ -48,19 +48,15 @@ Check ECP5 family datasheet for more information.
 * add more ground vias under BGA
 
 ## Errata
-
-* Add missing qspi to the Pi to be able to program bitstream faster.
 * configuration bits for FPGA should be tied to gnd not through a 10k resistor. The voltage is about 1v, so might
   be a little close to the threshold of the 3.3v IOBANK supply. Replace with 0Ohm resistors? Or just tie to gnd?
-* used IS25LP016D-JBLE as flash, but it has problems with enabling QE for QSPI. Relace with the model used on icebreaker
-* ecp5 SPI clock pin can't be used as an input, so have to [add a bodge wire](https://github.com/mattvenn/basic-ecp5-pcb/issues/3) for SPI peripheral comms with Pi. See the test-spi-clk-in branch for a workaround.
 
 ## RPi connection info
 
 See [test/mv_ecp.lpf](test/mv_ecp.lpf) for FPGA pinning. The following are the physical pins on the raspberry pi:
 
 * serial: TX, RX on pins 8 and 10
-* I2C: bitbanged on pins 38 and 40. Optional pullup resistors R1 & R2. Need to set up in boot/config.txt
+* I2C: pins 2 and 3.  
 * GPIOs: pins 31, 32, 33, 36.
 * SPI: SDO, SDI, CLK, CE0 on pins 19, 21, 23, 24. These are connected to the onboard FLASH for bitstream config.
 * Extra SPI CE1: pin 26 
@@ -68,8 +64,7 @@ See [test/mv_ecp.lpf](test/mv_ecp.lpf) for FPGA pinning. The following are the p
 ### RPi Gotchas
 
 * [fomu_flash will leave the SPI device in an unusable state](https://github.com/im-tomu/fomu-flash/issues/8). Run `sudo rmmod spi_bcm2835 && sudo modprobe spi_bcm2835` to reset it.
-* connected I2C pins are just GPIOs. I have found the Pi's I2C hardware unusable, so always use the slower bitbanged version. 
-  To enable add this to /boot/config.txt: `dtoverlay=i2c-gpio,i2c_gpio_sda=21,i2c_gpio_scl=20,i2c_gpio_delay_us=8,bus=3`
+
 
 ## Test: 
 
